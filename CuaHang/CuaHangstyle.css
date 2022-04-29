@@ -1,0 +1,24 @@
+/* === HEADER === */
+
+body { position: relative; }
+.affix { top:0; width: 100%; z-index: 9999 !important; }
+.navbar { margin-bottom: 0px; }
+.affix ~ .container-fluid { position: relative; top: 50px; }
+#Logo {width:45px; margin:-10px 0 -10px -10px;}
+.navbar-nav li {margin: 0 10px -15px 0}
+#Search {float:right}
+
+/* === FOOTER === */
+
+#Contact1 {margin-left:100px;}
+#Contact {margin-right:100px;}
+#Contact a {margin: 0 70px 0 0;}
+
+/* === CONTENT CỬA HÀNG === */
+
+/* ---- Info ----*/
+.col-sm-4 {  }
+.col-sm-4 img { width:210px; height:210px; border: 10px solid #cff564 }
+#farmer { background-color:#cff564; padding:10px; margin-top:-9px;}
+.tab-content { padding: 20px 15px 100px 15px ; }
+#SoLieu img { width:300px; }

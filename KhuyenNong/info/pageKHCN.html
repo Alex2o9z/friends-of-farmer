@@ -1,0 +1,247 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/png" href="image/logo.png"/>
+		<title>FsF - Trồng trọt</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="function.js"></script>
+		
+		<!-- Tab -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+
+		<div class="topnav" id="myTopnav">
+			<a class="logo"><img src="../../image/logo.png" style="width:100%;"></a>
+			<a href="../TrangChu/index.html"><i class="fa fa-home"></i> Trang Chủ</a>
+			<a href="../NongDan/NongDan.html"><i class="fa fa-address-card-o"></i> Nông Dân</a>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-archive"></i> Cửa Hàng
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../CuaHang/ShopNS.html">Nông Sản</a>
+					<a href="../CuaHang/ShopLS.html">Lâm Sản</a>
+					<a href="../CuaHang/ShopTS.html">Thuỷ Sản</a>
+				</div>
+			</div>
+			<div class="dropdown active">
+				<button class="dropbtn"><i class="fa fa-question-circle"></i> Khuyến Nông 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Trồng Trọt</a>
+					<a href="../KhuyenNong/ChanNuoi.html">Chăn Nuôi</a>
+					<a href="../KhuyenNong/KHCN.html">Khoa Học - Công Nghệ</a>
+				</div>
+			</div>
+			<a href="#about"><i class="fa fa-info-circle"></i> Liên Hệ</a>
+			
+			<a class="sign" href="#login" onclick="document.getElementById('signIn').style.display='block'" style="width:auto;"><i class="fa fa-sign-in"></i> Đăng Nhập</a>
+			<div id="signIn" class="signIn">
+				<form class="signIn-content animate" action="/action_page.php" method="post">
+					
+					<div class="signInleft">
+					<div class="imgcontainer">
+						<img src="image/logo.png" alt="Avatar" class="avatar">
+						<h3>FARMER'S<span> FRIEND</span></h3>
+						<a class="signUpNow" href="#"><b>THAM GIA NGAY</b></a>
+					</div>
+					</div>
+							
+					<div class="signInright">
+						<span onclick="document.getElementById('signIn').style.display='none'" class="close" title="Đóng">&times;</span>
+					<div class="container" style="background-color:#efe;">
+						<label for="uname"><b>Tên tài khoản</b></label>
+						<input type="text" placeholder="Nhập tên tài khoản" name="uname" required>
+
+						<label for="psw"><b>Mật Khẩu</b></label>
+						<input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+						
+						<label for="signInrole"><b>Vai trò</b></label>
+						<select id="signInrole" name="signInrole">
+							<option value="australia">Nông dân</option>
+							<option value="canada">Người mua</option>
+							<option value="usa">Cơ quan nhà nước</option>
+							<option value="canada">Admin</option>
+						</select>
+						
+						<button type="submit">Đăng nhập</button>
+						<label style="font-size:17px;">
+							<input type="checkbox" checked="checked" name="remember"></input> Lưu tên tài khoản
+						</label>
+						<div class="forgotpw">
+							<span class="psw"><a href="#"> Quên mật khẩu? </a></span>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+			
+			<a class="sign" href="../DangKi/DangKi.html"><i class="fa fa-user-plus"></i> Đăng Kí</a>
+			
+			<div class="search-container">
+				<form action="" class="search-bar">
+					<input type="search" name="search" placeholder="Tìm kiếm...">
+						<button class="search-btn" type="submit" href="#">
+							<i class="fa fa-search"></i>
+						</button>
+					</input>
+				</form>
+			</div>
+			
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveMenu()">&#9776;</a>
+		</div>
+
+		<div class="container">
+			<div class="title">
+				<h1><b>Giải pháp sinh thái để bảo vệ cây trồng</b></h1>
+				<h6>Cập nhật: 20/06/2021 17:35</h6>
+			<div>
+				<h3><b>Trước những tác động ngày càng phức tạp và khó lường của biến đổi khí hậu ảnh hưởng nghiêm trọng đến sản xuất nông nghiệp đặt ra những thách thức cho con người trong việc tìm kiếm những biện pháp phát triển một nền nông nghiệp sinh thái bền vững.</b></h3><br>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="content">
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    Xu hướng bảo vệ cây trồng dựa trên các đặc tính nông học của cây (Agroecological crop protection - ACP) đang được các quốc gia, các nhà khoa học trên thế giới quan tâm nghiên cứu nhằm tìm ra những chiến lược phù hợp trong việc kết hợp nhiều biện pháp quản lý mà ý tưởng chính đến từ thành công của chương trình IPM và sự phát triển của công tác quản lý sinh thái cộng đồng trong cùng một hệ thống cư dân. Với nhiều dự án về hệ thống canh tác áp dụng ACP thành công đã mang lại nhiều lợi ích cho cộng đồng và mở ra nhiều hướng đi mới để phát triển nông nghiệp bền vững thích ứng với tình trạng biến đổi khí hậu ngày càng phức tạp và khó lường. <br><br>
+                    Tại Việt Nam, đã có nhiều nghiên cứu, ứng dụng các biện pháp sinh thái trong nông nghiệp để sản xuất bền vững như: sử dụng cỏ dại để thu hút thiên địch trong quản lý dịch hại trên cây trồng hay biện pháp sử dụng các loại cỏ dại che phủ để ngăn chặn tiến trình xói mòn, thoái hóa đất,... Đây là những biện pháp vừa phục vụ sản xuất bền vững vừa thích ứng biến đổi khí hậu vì một số loại cỏ dại có thể dùng làm nguồn phân xanh, cung cấp chất dinh dưỡng và vật chất hữu cơ làm cải thiện cấu trúc đất, phục hồi một số vùng đất bạc màu vừa có khả năng bảo vệ đất trồng trước những tác động bất lợi của tự nhiên như xói mòn, khô hạn,… <br><br>
+                    <div class="center">
+						<img src="http://www.khuyennongvn.gov.vn/portals/0/news_images/2021/05/hangweb/mia_sauducthan4vach.jpg" alt="">
+						<h5><i><b>Sử dụng một số loại cỏ có hoa thu hút thiên địch trong vườn thanh long</b></i></h5>
+					</div>
+                    Một số chương trình đã ứng dụng giải pháp sinh thái thành công thực hiện thời gian qua: <br><br>
+                </p>
+				<h3><b>Chương trình “Ruộng lúa bờ hoa”</b></h3>
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+					Dọn sạch cỏ dại, phát quang bờ lô, thu gom và băm vùi lá mía còn sót lại để diệt nguồn sâu từ vụ trước. <br>
+					<br>
+					Những ruộng mía bị sâu hại nặng cần phải thu gom và đốt lá tiêu diệt nguồn sâu trước khi trồng lại. Tuyệt đối không vứt bỏ hom giống mía trên đồng ruộng và xung quanh bờ.
+				</p>
+				<h3><b>3. Biện pháp canh tác</b></h3>
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+					Đây là chương trình ứng dụng công nghệ sinh thái vào sản xuất đã được nông dân rất ủng hộ đặc biệt là vùng đồng bằng sông Cửu Long. Mô hình do Viện Nghiên cứu Lúa quốc tế (IRRI) triển khai thí điểm đầu tiên ở huyện Cai Lậy và Cái Bè (Tiền Giang) từ vụ đông xuân 2009-2010 với tên gọi chương trình "Quản lý dịch hại tổng hợp trên lúa bằng công nghệ sinh thái". Nông dân trong vùng được hướng dẫn trồng nhiều loại hoa trên các bờ đê, đường đi quanh khu vực canh tác lúa. Kết quả, tính trên mỗi ha tiết kiệm được đến 500 nghìn đồng tiền thuốc bảo vệ thực vật và công phun. <br><br>
+					Sau Tiền Giang, An Giang là tỉnh tiếp tục thực hiện trong ba vụ liên tiếp kết hợp với áp dụng biện pháp "1 phải 5 giảm” và quy trình GlobalGAP đã cho thấy: ruộng lúa gần như không phải phun thuốc trừ sâu, rầy mà vẫn đạt năng suất hơn 6 tấn/ha ở vụ hè thu và thu đông, còn vụ đông xuân lên đến hơn 7 tấn/ha, tăng gần một tấn/ha so canh tác bình thường. Hiện tại mô hình vẫn đang được áp dụng rộng rãi trên toàn vùng khi vừa góp phần nâng cao hiệu quả sản xuất lúa vừa làm đẹp cảnh quan môi trường góp phần vào công cuộc xây dựng nông thôn mới tại các địa phương. <br><br>
+					</p>
+				<h3><b>Trồng cỏ dại che phủ đất</b></h3>
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+					Nhóm các nhà khoa học thuộc Viện Khoa học kỹ thuật Nông lâm nghiệp miền núi phía Bắc do Tiến sĩ Lê Quốc Doanh làm chủ nhiệm, đã nghiên cứu áp dụng các biện pháp trồng và quản lý cỏ dại để che phủ đất phục vụ phát triển nông nghiệp vùng cao. Kết quả cho thấy, ở các khu vực có che phủ mức độ xói mòn đất giảm từ 73 đến 94% so với các khu vực không che phủ. Với các vườn cây ăn trái, việc trồng xen cỏ dại vừa ngăn chặn xói mòn đất vừa sản xuất thêm thức ăn cho gia súc. Việc che phủ đất làm giảm nhiệt độ mặt đất từ 3 đến 7 độ C vào lúc 15 giờ hàng ngày, giảm lượng nước bốc hơi. Chỉ sau một vụ áp dụng, che phủ đất đã làm tăng hàm lượng các chất hữu cơ, đặc biệt là lân và kali dễ tiêu tạo điều kiện cho cây phát triển tốt hơn. Đến nay, diện tích áp dụng các biện pháp che phủ đất bằng cỏ dại đã đạt hơn 1.000 ha với sự tham gia của trên 2.000 hộ dân ở các tỉnh Bắc Kạn, Hà Giang, Sơn La, Lai Châu, Nghệ An, Điện Biên...<br><br>
+					Ngoài ra, nhiều hộ dân ở Tây Nguyên áp dụng phương pháp trồng xen cỏ đậu Stylo và cỏ Ruzi với cà phê giảm được hai lần tưới nước trong mùa khô.<br><br>
+					Ở miền Nam, trồng cỏ đậu phộng dại hoặc một số loại cỏ thu hút thiên địch để che phủ đất đã được ứng dụng thử nghiệm vào vườn hồ tiêu, xoài ở Đồng Nai, điều (Bình Phước, Kon Tum, Đăk Lăk), thanh long (Bình Thuận), bước đầu cho kết quả tốt.<br><br>
+					Tóm lại, thuật ngữ “phòng trừ cỏ dại” đã được sử dụng trong một thời gian rất dài cho thấy cái nhìn không mấy thiện cảm của chúng ta đối với đối tượng này, thậm chí chúng còn được xem là một loại dịch hại cần phải tiêu diệt. Tuy nhiên với việc hướng đến một nền nông nghiệp sinh thái, phát triển bền vững chúng ta cần hướng đến việc trồng và quản lý dỏ dại thật hiệu quả vì lợi ích chúng mang lại không hề nhỏ. Cỏ dại có lợi hay có hại cần xem xét tuỳ thuộc vào chủng loại và số lượng cũng như phải có cách sử dụng và biện pháp quản lý hiệu quả phù hợp với điều kiện canh tác thì cỏ dại sẽ phát huy tác dụng, góp phần bảo vệ môi trường sinh thái và đảm bảo đa dạng sinh học trong tự nhiên. <br><br>
+					<span style="float: right;"><b>Mỹ Lộc</b></span><br>
+					<span style="float: right;"><b>Trung tâm Dịch vụ KTNN Vĩnh Long</b></span>
+				</p>
+			</div>
+		</div>
+
+        <div id="about" class="footer" style="background-color:black;color:white;">
+            <footer class="footer-distributed">
+            
+                <div class="footer-left">
+                    <h3>
+                    <img class="logoft" src="../../image/logo.png">
+                    FARMER'S<span> FRIEND</span></h3>
+                    <p class="footer-links">
+                        <a href="#">Trang chủ</a> | <a href="#">Cửa hàng</a> | 
+                        <a href="#">Khuyến nông </a> | <a href="#">Hỗ Trợ </a>
+                    </p>
+                    <br>
+                    <a class="signUpNow2" href="../DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+                    
+                </div>
+
+                <div class="footer-center">
+
+                    <div><button title="Địa chỉ" onclick="copyToClipboard('message')">
+                        <i class="fa fa-map-marker"></i></button>
+                        <p><span>03 Ngu Hanh Son Street</span> Danang, Vietnam</p>
+                        <p style="display: none;" id="message">03 Ngu Hanh Son Street, Danang, Vietnam</p></div>
+                    <div><button title="Số điện thoại" onclick="copyToClipboard('message1')">
+                        <i class="fa fa-phone"></i></button>
+                        <p id="message1">+84 123 4567 890</p></div>
+                    <div><button title="Email" onclick="copyToClipboard('message2')">
+                        <i class="fa fa-envelope"></i></button>
+                        <p><a id="message2">fsfteam@vku.udn.vn</a></p></div>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <p class="footer-company-about">
+                        <span>FsF Team company</span>
+                        Web Farmer's Friend is a forum for Farmers, Businessmens &amp; Government Agency for Agriculture.
+                    </p>
+
+                    <div class="footer-icons">
+                        <a class="fb" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="gg" title="Google" href="#"><i class="fa fa-google"></i></a>
+                        <a class="inst" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+                        <a class="twt" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+
+                </div>
+                <hr style="margin-top:40px;">
+                <p class="footer-company-name">Copyright &copy; 2021 FsF Team . All rights reserved.</p>
+            </footer>
+        </div>
+        
+    </div>
+    
+    <script>
+        window.onscroll = function() {stickyMenu()};
+
+        var navbar = document.getElementById("myTopnav");
+        var sticky = navbar.offsetTop;
+
+        function stickyMenu() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+        
+        //close login form
+        window.onscroll = function() {stickyMenu()};
+
+        var navbar = document.getElementById("myTopnav");
+        var sticky = navbar.offsetTop;
+
+        function stickyMenu() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+        
+        // Carousel
+        var slideIndex = [1];
+        var slideId = ["mySlides1"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        
+    </script>
+</body>
+</html>

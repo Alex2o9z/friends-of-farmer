@@ -1,0 +1,282 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/png" href="image/logo.png"/>
+		<title>FsF - Trồng trọt</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="function.js"></script>
+		
+		<!-- Tab -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+
+		<div class="topnav" id="myTopnav">
+			<a class="logo"><img src="../../image/logo.png" style="width:100%;"></a>
+			<a href="../TrangChu/index.html"><i class="fa fa-home"></i> Trang Chủ</a>
+			<a href="../NongDan/NongDan.html"><i class="fa fa-address-card-o"></i> Nông Dân</a>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-archive"></i> Cửa Hàng
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../CuaHang/ShopNS.html">Nông Sản</a>
+					<a href="../CuaHang/ShopLS.html">Lâm Sản</a>
+					<a href="../CuaHang/ShopTS.html">Thuỷ Sản</a>
+				</div>
+			</div>
+			<div class="dropdown active">
+				<button class="dropbtn"><i class="fa fa-question-circle"></i> Khuyến Nông 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Trồng Trọt</a>
+					<a href="../KhuyenNong/ChanNuoi.html">Chăn Nuôi</a>
+					<a href="../KhuyenNong/KHCN.html">Khoa Học - Công Nghệ</a>
+				</div>
+			</div>
+			<a href="#about"><i class="fa fa-info-circle"></i> Liên Hệ</a>
+			
+			<a class="sign" href="#login" onclick="document.getElementById('signIn').style.display='block'" style="width:auto;"><i class="fa fa-sign-in"></i> Đăng Nhập</a>
+			<div id="signIn" class="signIn">
+				<form class="signIn-content animate" action="/action_page.php" method="post">
+					
+					<div class="signInleft">
+					<div class="imgcontainer">
+						<img src="image/logo.png" alt="Avatar" class="avatar">
+						<h3>FARMER'S<span> FRIEND</span></h3>
+						<a class="signUpNow" href="#"><b>THAM GIA NGAY</b></a>
+					</div>
+					</div>
+							
+					<div class="signInright">
+						<span onclick="document.getElementById('signIn').style.display='none'" class="close" title="Đóng">&times;</span>
+					<div class="container" style="background-color:#efe;">
+						<label for="uname"><b>Tên tài khoản</b></label>
+						<input type="text" placeholder="Nhập tên tài khoản" name="uname" required>
+
+						<label for="psw"><b>Mật Khẩu</b></label>
+						<input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+						
+						<label for="signInrole"><b>Vai trò</b></label>
+						<select id="signInrole" name="signInrole">
+							<option value="australia">Nông dân</option>
+							<option value="canada">Người mua</option>
+							<option value="usa">Cơ quan nhà nước</option>
+							<option value="canada">Admin</option>
+						</select>
+						
+						<button type="submit">Đăng nhập</button>
+						<label style="font-size:17px;">
+							<input type="checkbox" checked="checked" name="remember"></input> Lưu tên tài khoản
+						</label>
+						<div class="forgotpw">
+							<span class="psw"><a href="#"> Quên mật khẩu? </a></span>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+			
+			<a class="sign" href="../DangKi/DangKi.html"><i class="fa fa-user-plus"></i> Đăng Kí</a>
+			
+			<div class="search-container">
+				<form action="" class="search-bar">
+					<input type="search" name="search" placeholder="Tìm kiếm...">
+						<button class="search-btn" type="submit" href="#">
+							<i class="fa fa-search"></i>
+						</button>
+					</input>
+				</form>
+			</div>
+			
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveMenu()">&#9776;</a>
+		</div>
+
+		<div class="container">
+			<div class="title">
+				<h1><b>Quy trình quản lý tổng hợp (IPM) sâu đục thân mía bốn vạch đầu nâu tại Tây Ninh</b></h1>
+				<h6>Cập nhật: 20/05/2021 15:35</h6>
+				<div class="title1">
+					<img src="http://www.khuyennongvn.gov.vn/portals/0/news_images/2021/05/hangweb/mia_sauducthan4vach_1.jpg" alt="">
+					<p>Sâu đục thân mía bốn vạch đầu nâu</p>
+				</div>
+			<div>
+				<h3><b>Quy trình này áp dụng cho các tổ chức, cá nhân trồng mía nguyên liệu tại tỉnh Tây Ninh và các vùng trồng mía có điều kiện canh tác tương tự.</b></h3>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="content">
+				<h3><b>1. Biện pháp giống</b></h3>
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+						Chọn giống mía tốt, ít bị nhiễm sâu đục thân mía bốn vạch đầu nâu có năng suất, chất lượng cao như giống mía KK3, LK92-11,... <br>
+					<br>
+					Hom làm giống là giống thuần có nguồn gốc rõ ràng, chọn hom giống từ cây mía có thời gian sinh trưởng từ 7 - 10 tháng tuổi. <br>
+					<br>
+					Hom giống lấy từ 1/3 ở đoạn giữa thân cây mía, chiều dài của hom giống khoảng 2 - 3 mắt mầm, có mầm ngủ khỏe. <br>
+					<br>
+					Hom giống phải đạt tiêu chuẩn giống cấp 3 theo TCVN12369:2018 về “Mía giống - Yêu cầu kỹ thuật” trở lên. Cụ thể: Độ thuần > 95%; tuổi mía 6 - 10 tháng; mía vụ tơ hoặc gốc 1; cây không đổ nghiêng quá 30o so với mặt đất, không có chồi nách; đường kính thân >80% đường kính thân đặc trưng của giống; độ dài lóng tối đa không vượt quá 20% độ dài lóng trung bình của giống; số mắt mầm đã phát triển không bình thường trên cây mía không vượt quá 5% tổng số mắt mầm của cây; số mắt mầm đã mọc lên, phát triển vượt quá 1 cm so với bề mặt của lóng mía không được vượt quá 5% tổng số mắt mầm của cây; không nhiễm bệnh than, bệnh thối đỏ, bệnh chồi cỏ và bệnh trắng lá mía; tỷ lệ cây bị sâu đục thân gây hại < 3%; tỷ lệ cây bị rệp sáp đỏ gây hại < 5%; tỷ lệ cây bị rệp xơ bông trắng gây hại < 5% và chưa xuất hiện muội đen.
+					Khi trồng, lấp hom kín, không để trồi hom lên trên mặt ruộng để hạn chế sâu hại tìm đến đẻ trứng gây hại.
+				</p>
+				<h3><b>2. Biện pháp vệ sinh đồng ruộng</b></h3>
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+					Dọn sạch cỏ dại, phát quang bờ lô, thu gom và băm vùi lá mía còn sót lại để diệt nguồn sâu từ vụ trước. <br>
+					<br>
+					Những ruộng mía bị sâu hại nặng cần phải thu gom và đốt lá tiêu diệt nguồn sâu trước khi trồng lại. Tuyệt đối không vứt bỏ hom giống mía trên đồng ruộng và xung quanh bờ.
+				</p>
+				<h3><b>3. Biện pháp canh tác</b></h3>
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+					Trồng mía đúng thời vụ đảm bảo cho mía tránh được các đợt cao điểm của sâu phát sinh, tránh được rủi ro về thời tiết và đạt được năng suất cao. Tập trung trồng mía chính vụ (từ tháng 11 đến tháng 1 năm sau), tùy theo từng chân đất để bố trí thời vụ và giống mía phù hợp tạo điều kiện cho cây mía sinh trưởng, phát triển tốt. <br>
+					<br>
+					Làm đất đúng kỹ thuật tạo điều kiện nền đất tơi xốp đất luôn giữ ẩm giúp mía phát triển tốt. <br>
+					<br>
+					Bón phân cân đối, bón thúc hợp lý, kịp thời để cây mía phát triển tốt, đảm bảo lượng phân cho 1,0 ha/vụ mía là 200 kg N + 100 kg P2O5 + 180 kg K2O. <br>
+					<br>
+					Tưới nước bổ sung trong cao điểm mùa khô hạn (từ tháng 1 - 3), lượng nước tưới 500 m3/ha/lần, tưới từ 1 - 2 lần/tháng. Đồng thời tiêu úng cho ruộng mía sau những đợt mưa lớn. <br> <br>
+					Luân canh cải tạo đất (trồng cây khác như cây họ đậu từ 6 tháng đến 1 năm) khi kết thúc một chu kỳ mía. <br><br>
+					Các kỹ thuật khác như mật độ trồng, làm cỏ... áp dụng theo Quy trình kỹ thuật tạm thời thâm canh mía ban hành theo Quyết định số 383/QĐ-TT-CCN ngày 27/08/2015 của Cục Trồng Trọt
+				</p>
+				<h3><b>4. Biện pháp thủ công, cơ giới</b></h3>
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+					Thường xuyên thăm đồng, thu gom và tiêu hủy triệt để các bộ phận của cây mía bị nhiễm sâu đục thân mía bốn vạch đầu nâu bằng cách ngắt bỏ ổ trứng, bóc tỉa lá mía, cắt thân mía bị sâu đục thân gây hại đưa ra khỏi ruộng mía, sau đó phơi khô và đem đốt. <br><br>
+					Dùng bẫy đèn thu bắt trưởng thành sâu đục thân mía bốn vạch đầu nâu. Số lượng bẫy là 10 - 15 bẫy đèn/ha, đặt dọc theo các bờ ruộng mía từ 30 - 40 m dài đặt 01 bẫy đèn. Thời gian đặt bẫy đèn bắt đầu từ tháng 4 hàng năm (đầu mùa mưa). <br><br>
+					Ruộng mía bị sâu đục thân mía bốn vạch đầu nâu gây hại nặng, cần ưu tiên thu mía sớm ngay từ đầu vụ thu hoạch. Đối với những ruộng ít hoặc không bị sâu hại, tiến hành tủ (phủ) lá, không đốt lá sau hoạch để giữ ẩm cho mía gốc, hạn chế cỏ dại và bảo vệ quần thể thiên địch của sâu đục thân mía bốn vạch đầu nâu. <br><br>
+					Khi thu hoạch, chặt sát gốc để sâu không còn sót lại trong thân cây, đồng thời giúp cho mía gốc có khả năng tái sinh tốt hơn, đảm bảo mật độ cho vụ sau. <br><br>
+					<div class="center">
+						<img src="http://www.khuyennongvn.gov.vn/portals/0/news_images/2021/05/hangweb/mia_sauducthan4vach.jpg" alt="">
+						<h5><i><b>Triệu chứng gây hại của sâu đục thân mía bốn vạch đầu nâu</b></i></h5>
+					</div>
+				</p>
+				<h3><b>5. Biện pháp sinh học</b></h3>
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+					Bảo vệ thiên địch tự nhiên: <br><br>
+					Bảo vệ các loài ký sinh, bắt mồi ăn thịt có sẵn như các loài ong (ong mắt đỏ, ong đen, ong kén trắng), bọ đuôi kìm (bọ đuôi kìm vàng, bọ đuôi kìm đen) bằng cách không phun thuốc bảo vệ thực vật hóa học khi không cần thiết, không sử dụng các loại thuốc bảo vệ thực vật ảnh hưởng trực tiếp đến thiên địch; hoặc tại ven ruộng mía trồng các cây hoa có mật không phải là ký chủ của các loại sâu hại mía. <br><br>
+					Phóng thích loài ký sinh và bắt mồi ăn thịt <br><br>
+					Nhân nuôi và phóng thích bổ sung các tác nhân sinh học như ong mắt đỏ Trichogramma chilonis Ishii, bọ đuôi kìm Euborellia annulipes, ... ra đồng ruộng để kiểm soát sâu đục thân mía bốn vạch đầu nâu. <br><br>
+					Thả ong mắt đỏ Trichogramma chilonis Ishii 15 ngày/lần, mật độ thả 50.000 ong/lần/ha, thả 5 - 6 lần/vụ mía bắt đầu từ tháng thứ 3 - 7 sau trồng. <br><br>
+					Thả bọ đuôi kìm Euborellia annulipes với mật độ 3.000 con/ha, thả 1 lần duy nhất vào lúc mía được 5 tháng tuổi. <br><br>
+					Sử dụng bẫy pheromone để dự tính dự báo và diệt trưởng thành sâu đục thân các loại. <br><br>
+					Phun chế phẩm sinh học <br><br>
+					Khi tỷ lệ cây bị sâu đục thân mía bốn vạch đầu nâu gây hại ở giai đoạn đẻ nhánh - vươn lóng (< 10% tỷ lệ cây bị sâu hại) thì sử dụng một số chế phẩm sinh học chứa Bacillus thuringiensis var. kurstaki 16.000 IU + Granulosis virus 108 PIB. <br><br>
+				</p>
+				<h3><b>6. Biện pháp hóa học</b></h3>
+				<p style="font-size: 16px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+					Thường xuyên thăm đồng, phát hiện sớm các ổ dịch của sâu đục thân mía bốn vạch đầu nâu, tiến hành phun thuốc bảo vệ thực vật theo phương pháp chọn lọc, cục bộ để tiêu diệt nguồn lây nhiễm ban đầu mà vẫn có khả năng bảo vệ được thiên địch. <br><br>
+					Khi tỷ lệ cây bị sâu đục thân mía bốn vạch đầu nâu gây hại vượt qua ngưỡng gây hại kinh tế ở giai đoạn vươn lóng (>10% tỷ lệ cây bị sâu hại) tiến hành sử dụng thuốc bảo vệ thực vật có chứa hoạt chất như Carbosulfan (min 93%), Cartap (min 97%), Chlorantraniliprole… 35% (w/w). <br><br>
+					Hạn chế phun thuốc hóa học để bảo vệ các loài ký sinh và bắt mồi ăn thịt trong tự nhiên góp phần kiểm soát sâu đục thân mía bốn vạch đầu nâu. <br><br>
+					Các thuốc bảo vệ thực vật có chứa hoạt chất Carbosulfan (min 93%), cartap (min 97%), Chlorantraniliprole … 35% (w/w), chế phẩm sinh học chứa Bacillus thuringiensis var. kurstaki 16.000 IU + Granulosis virus 108 PIB, chỉ được khuyến cáo sử dụng sau khi được đăng ký vào Danh mục thuốc bảo vệ thực vật được phép sử dụng tại Việt Nam để phòng chống sâu đục thân mía bốn vạch đầu nâu trên cây mía. <br><br>
+					<span style="float: right;"><b>BBT</b> (gt)</span>
+				</p>
+			</div>
+		</div>
+
+        <div id="about" class="footer" style="background-color:black;color:white;">
+            <footer class="footer-distributed">
+            
+                <div class="footer-left">
+                    <h3>
+                    <img class="logoft" src="../../image/logo.png">
+                    FARMER'S<span> FRIEND</span></h3>
+                    <p class="footer-links">
+                        <a href="#">Trang chủ</a> | <a href="#">Cửa hàng</a> | 
+                        <a href="#">Khuyến nông </a> | <a href="#">Hỗ Trợ </a>
+                    </p>
+                    <br>
+                    <a class="signUpNow2" href="../DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+                    
+                </div>
+
+                <div class="footer-center">
+
+                    <div><button title="Địa chỉ" onclick="copyToClipboard('message')">
+                        <i class="fa fa-map-marker"></i></button>
+                        <p><span>03 Ngu Hanh Son Street</span> Danang, Vietnam</p>
+                        <p style="display: none;" id="message">03 Ngu Hanh Son Street, Danang, Vietnam</p></div>
+                    <div><button title="Số điện thoại" onclick="copyToClipboard('message1')">
+                        <i class="fa fa-phone"></i></button>
+                        <p id="message1">+84 123 4567 890</p></div>
+                    <div><button title="Email" onclick="copyToClipboard('message2')">
+                        <i class="fa fa-envelope"></i></button>
+                        <p><a id="message2">fsfteam@vku.udn.vn</a></p></div>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <p class="footer-company-about">
+                        <span>FsF Team company</span>
+                        Web Farmer's Friend is a forum for Farmers, Businessmens &amp; Government Agency for Agriculture.
+                    </p>
+
+                    <div class="footer-icons">
+                        <a class="fb" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="gg" title="Google" href="#"><i class="fa fa-google"></i></a>
+                        <a class="inst" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+                        <a class="twt" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+
+                </div>
+                <hr style="margin-top:40px;">
+                <p class="footer-company-name">Copyright &copy; 2021 FsF Team . All rights reserved.</p>
+            </footer>
+        </div>
+        
+    </div>
+    
+    <script>
+        window.onscroll = function() {stickyMenu()};
+
+        var navbar = document.getElementById("myTopnav");
+        var sticky = navbar.offsetTop;
+
+        function stickyMenu() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+        
+        //close login form
+        window.onscroll = function() {stickyMenu()};
+
+        var navbar = document.getElementById("myTopnav");
+        var sticky = navbar.offsetTop;
+
+        function stickyMenu() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+        
+        // Carousel
+        var slideIndex = [1];
+        var slideId = ["mySlides1"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        
+    </script>
+</body>
+</html>

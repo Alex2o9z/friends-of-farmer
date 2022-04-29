@@ -1,0 +1,308 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/png" href="image/logo.png"/>
+		<title>FsF - Nông Dân</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="function.js"></script>
+		<!-- bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- tab -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+
+		<div class="topnav" id="myTopnav">
+			<a class="logo"><img src="image/logo.png" style="width:100%;"></a>
+			<a href="../index.html"><i class="fa fa-home"></i> Trang Chủ</a>
+			<a href="NongDan/NongDan.html" class="active"><i class="fa fa-address-card-o"></i> Nông Dân</a>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-archive"></i> Cửa Hàng
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../CuaHang/ShopNS.html">Nông Sản</a>
+					<a href="../CuaHang/ShopLS.html">Lâm Sản</a>
+					<a href="../CuaHang/ShopTS.html">Thuỷ Sản</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-question-circle"></i> Khuyến Nông 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../KhuyenNong/TrongTrot.html">Trồng Trọt</a>
+					<a href="../KhuyenNong/ChanNuoi.html">Chăn Nuôi</a>
+					<a href="../KhuyenNong/KHCN.html">Khoa Học - Công Nghệ</a>
+				</div>
+			</div>
+			<a href="#about"><i class="fa fa-info-circle"></i> Liên Hệ</a>
+			
+			<a class="sign" href="#login" onclick="document.getElementById('signIn').style.display='block'" style="width:auto;"><i class="fa fa-sign-in"></i> Đăng Nhập</a>
+			<div id="signIn" class="signIn">
+				<form class="signIn-content animate" method="post">
+					
+					<div class="signInleft">
+					<div class="imgcontainer">
+						<img src="image/logo.png" alt="Avatar" class="avatar">
+						<h3>FARMER'S<span> FRIEND</span></h3>
+						<a class="signUpNow" href="#"><b>THAM GIA NGAY</b></a>
+					</div>
+					</div>
+							
+					<div class="signInright">
+						<span onclick="document.getElementById('signIn').style.display='none'" class="close" title="Đóng">&times;</span>
+					<div class="container" style="background-color:#efe;">
+						<label for="uname"><b>Tên tài khoản</b></label>
+						<input type="text" placeholder="Nhập tên tài khoản" name="uname" required>
+
+						<label for="psw"><b>Mật Khẩu</b></label>
+						<input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+						
+						<label for="signInrole"><b>Vai trò</b></label>
+						<select id="signInrole" name="signInrole">
+							<option value="australia">Nông dân</option>
+							<option value="canada">Người mua</option>
+							<option value="usa">Cơ quan nhà nước</option>
+							<option value="canada">Admin</option>
+						</select>
+						
+						<button type="submit">Đăng nhập</button>
+						<label style="font-size:17px;">
+							<input type="checkbox" checked="checked" name="remember"></input> Lưu tên tài khoản
+						</label>
+						<div class="forgotpw">
+							<span class="psw"><a href="#"> Quên mật khẩu? </a></span>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+			
+			<a class="sign" href="../DangKi/DangKi.html"><i class="fa fa-user-plus"></i> Đăng Kí</a>
+			
+			<div class="search-container">
+				<form action="" class="search-bar">
+					<input type="search" name="search" placeholder="Tìm kiếm...">
+						<button class="search-btn" type="submit" href="#">
+							<i class="fa fa-search"></i>
+						</button>
+					</input>
+				</form>
+			</div>
+			
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveMenu()">&#9776;</a>
+		</div>
+
+		<div class="content">
+			<div class="bodycontent">
+				<div id="Body" class="container mb-5">
+					<div class="container-fluid">
+						<img src="image/CHDTWP.jpg" class="rounded" width="100%" height="150px"></img>
+						<div class="content pt-2">
+							<div class="col-sm-4">
+								<div class=" rounded text-center p-1">
+									<img src="image/CuaHangDauTay2.jpg" class="rounded-circle" >
+									<h2 id="farmer" class="rounded"><b>&#127827; Vườn Dâu Đà Lạt</b></h2>
+								</div>
+								<div class="border border-top-0 mt-5">
+									<ul class="nav nav-tabs">
+										<li class="active"><a data-toggle="tab" href="#MoTa">Mô Tả</a></li>
+										<li><a data-toggle="tab" href="#SoLieu">Số Liệu</a></li>
+										<li><a data-toggle="tab" href="#LienHe">Liên Hệ</a></li>
+									</ul>
+									<div class="tab-content">
+										<div id="MoTa" class="tab-pane fade in active">
+											<h3>Sản phẩm: Dâu Tây sỉ và lẻ</h3>
+											<p>Dâu tây là một trong những đặc sản Đà Lạt, bạn không thể nào bỏ qua khi đến với thành phố sương mù. Với những quản dâu tây thơm ngon, đỏ mộng bạn có thể mua làm quà tặng, hoặc tự thưởng cho chính mình.</p>
+											
+										</div>
+										<div id="SoLieu" class="tab-pane fade">
+											<h4>Doanh số bán hàng</h4>
+											<img src="image/chart.png">
+										</div>
+										<div id="LienHe" class="tab-pane fade pl-5">
+											<h3>Liên Hệ</h3>
+											<div>
+												<p><i class="fa fa-home mr-3"></i> Đà Lạt, Lâm Đồng, Việt Nam</p>
+												<p><i class="fa fa-envelope mr-4"></i>vuondaudalat@gmail.com</p>
+												<p><i class="fa fa-phone mr-3"></i> +84 1234 567 88</p>
+												<p><i class="fa fa-print mr-3"></i> +84 1234 567 89</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-8">
+								<div  class="border border-rounded p-2">
+								<form role="form">
+									<h3><b>Gửi đề nghị hợp tác với Nông dân:<b></h3>
+									<div class="form-group">
+										<textarea class="form-control" rows="3" required></textarea>
+									</div>
+									<a type="submit" class="btn btn-primary">Gửi</a>
+								</form>
+								</div>
+								<hr>
+								<div  class="border border-rounded p-2">
+								<h2>Dâu tây đà lạt có vào mùa nào?</h2>
+								<h5><span class="glyphicon glyphicon-time"></span> 02:59 pm, 27 tháng 5 năm 2020.</h5><br>
+								<img src="image/CHdautay1.jpg" style="width:100%;">
+								<br><br><p>Rất nhiều khách du lịch thường hỏi dâu tây đà lạt có vào tháng mấy để đi lên? Nếu như những năm trước dâu chỉ được trồng từ tháng 1 tới tháng âm lịch. Thì hiện nay khi dâu tây được trồng trong nhà kính và hàng loạt công nghệ tiên tiến không phụ thuộc vào khí hậu. Dẫn tới dâu tây có quanh năm. Chỉ là có nhiều hay ít thôi nhé.</p>
+								<hr>
+								<h4>Để lại bình luận:</h4>
+								<form role="form">
+									<div class="form-group">
+									<textarea class="form-control" rows="3" required></textarea>
+									</div>
+									<button type="submit" class="btn btn-success">Bình luận</button>
+								</form>
+								</div><br>
+								
+								<div  class="border border-rounded p-2">
+								<h2>Giá dâu tây Đà Lạt hiện nay</h2>
+								<h5><span class="glyphicon glyphicon-time"></span> 07:25 am, 25 tháng 5, 2020.</h5><br>
+								<img src="image/CHdautay2.jpg" style="width:100%;">
+								<br><br>
+								<p>Đây là câu hỏi của rất nhiều du khách muốn mua loại đặc sản đà lạt nổi tiếng này về làm quà. Câu hỏi dâu tây bao nhiêu tiền 1kg được rất nhiều khách đặt ra.</p>
+								<hr>
+								
+								<h4>Để lại bình luận:</h4>
+								<form role="form">
+									<div class="form-group">
+									<textarea class="form-control" rows="3" required></textarea>
+									</div>
+									<button type="submit" class="btn btn-success">Bình luận</button>
+								</form>
+								<br><br>
+				  
+								<p style="margin-top:-30px"><span class="badge">2</span> bình luận để lại:</p><br>
+				  
+								<div class="row">
+									<div  class="border border-rounded p-2" style="margin: -20px 9px 0 9px;">
+									<div class="col-sm-2 text-center">
+									<img src="image/avatar.png" class="img-circle" height="90" width="90" alt="Avatar">
+									</div>
+									<div class="col-sm-10">
+									<h4>Thăng Trình<small> 10:30 am, 3 tháng 7, 2020.</small></h4>
+									<p>Câu trả lời là rất khó để trả lời chính xác giá dâu tây đà lạt hiện tại vì đà lạt có rất nhiều loại như Pháp, Nhật, Úc, New Zealand, dâu lá và cả giống dâu địa phương có từ lâu.</p>
+									</div>
+									</div>
+									<br>
+									<div  class="border border-rounded p-2" style="margin: -21px 9px -6px 9px;">
+									<div class="col-sm-2 text-center">
+									<img src="image/avatar.png" class="img-circle" height="90" width="90" alt="Avatar">
+									</div>
+									<div class="col-sm-10">
+									<h4>Viết Tân<small> 08:23 am, 1 tháng 8, 2020.</small></h4>
+									<p>Các giống dâu đà lạt dễ trồng, ít sâu bệnh thường có giá rẻ, từ 90.000đ/kg đến 120.000/kg. Mặc nhiên không có loại nào có giá chỉ 20.000đ/kg như trên nhé.</p>
+									<br>
+									<p><span class="badge">1</span> trả lời bình luận:</p><br>
+									<div class="row border border-rounded p-2" style="margin: -25px -21px -6px 0;">
+										<div class="col-sm-2 text-center">
+										<img src="image/avatar.png" class="img-circle" height="70" width="70" alt="Avatar">
+										</div>
+										<div class="col-xs-10">
+										<h4>Tấn Hữu<small> 05:15 pm, 20 tháng 9, 2020.</small></h4>
+										<p>Còn các loại dâu ngoại nhập thì giá cao hơn vì được trồng trong nhà kính và nhiều công nghệ tiên tiến nhất như công nghệ Biofress.</p>
+										<br>
+										</div>
+									</div>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+			</div>
+			
+			<div id="about" class="footer" style="background-color:black;color:white;">
+				<footer class="footer-distributed">
+				
+					<div class="footer-left">
+						<h3>
+						<img class="logoft" src="image/logo.png">
+						FARMER'S<span> FRIEND</span></h3>
+						<p class="footer-links">
+							<a href="../index.html">Trang chủ</a> | <a href="#myTopnav">Cửa hàng</a> | 
+							<a href="#myTopnav">Khuyến nông </a> | <a href="#about">Hỗ Trợ </a>
+						</p>
+						<br>
+						<a class="signUpNow2" href="../DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+						
+					</div>
+ 
+					<div class="footer-center">
+ 
+						<div><button title="Địa chỉ" onclick="copyToClipboard('message')">
+							<i class="fa fa-map-marker"></i></button>
+							<p><span>03 Ngu Hanh Son Street</span> Danang, Vietnam</p>
+							<p style="display: none;" id="message">03 Ngu Hanh Son Street, Danang, Vietnam</p></div>
+						<div><button title="Số điện thoại" onclick="copyToClipboard('message1')">
+							<i class="fa fa-phone"></i></button>
+							<p id="message1">+84 123 4567 890</p></div>
+						<div><button title="Email" onclick="copyToClipboard('message2')">
+							<i class="fa fa-envelope"></i></button>
+							<p><a id="message2">fsfteam@vku.udn.vn</a></p></div>
+ 
+					</div>
+ 
+					<div class="footer-right">
+ 
+						<p class="footer-company-about">
+							<span>FsF Team company</span>
+							Web Farmer's Friend is a forum for Farmers, Businessmens &amp; Government Agency for Agriculture.
+						</p>
+ 
+						<div class="footer-icons">
+							<a class="fb" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+							<a class="gg" title="Google" href="#"><i class="fa fa-google"></i></a>
+							<a class="inst" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+							<a class="twt" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+ 
+					</div>
+					<hr style="margin-top:40px;">
+					<p class="footer-company-name">Copyright &copy; 2021 FsF Team . All rights reserved.</p>
+				</footer>
+			</div>
+			
+		</div>
+		
+		<script>
+			window.onscroll = function() {stickyMenu()};
+
+			var navbar = document.getElementById("myTopnav");
+			var sticky = navbar.offsetTop;
+
+			function stickyMenu() {
+				if (window.pageYOffset > sticky) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+			
+			// Get the modal
+			var modal = document.getElementById('signIn');
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == signIn) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>

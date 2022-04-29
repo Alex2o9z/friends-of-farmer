@@ -1,0 +1,388 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/png" href="image/logo.png"/>
+		<title>FARMER'S FRIEND - Đăng kí</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="function.js"></script>
+	</head>
+	
+	<body>
+
+		<div class="topnav" id="myTopnav">
+			<a class="logo"><img src="image/logo.png" style="width:100%;"></a>
+			<a href="../index.html"><i class="fa fa-home"></i> Trang Chủ</a>
+			<a href="../NongDan/NongDan.html"><i class="fa fa-address-card-o"></i> Nông Dân</a>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-archive"></i> Cửa Hàng
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../CuaHang/ShopNS.html">Nông Sản</a>
+					<a href="../CuaHang/ShopLS.html">Lâm Sản</a>
+					<a href="../CuaHang/ShopTS.html">Thuỷ Sản</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-question-circle"></i> Khuyến Nông 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../KhuyenNong/TrongTrot.html">Trồng Trọt</a>
+					<a href="../KhuyenNong/ChanNuoi.html">Chăn Nuôi</a>
+					<a href="../KhuyenNong/KHCN.html">Khoa Học - Công Nghệ</a>
+				</div>
+			</div>
+			<a href="#about"><i class="fa fa-info-circle"></i> Liên Hệ</a>
+			
+			<a class="sign" href="#login" onclick="document.getElementById('signIn').style.display='block'" style="width:auto;"><i class="fa fa-sign-in"></i> Đăng Nhập</a>
+			<div id="signIn" class="signIn">
+				<form class="signIn-content animate" method="post">
+					
+					<div class="signInleft">
+					<div class="imgcontainer">
+						<img src="image/logo.png" alt="Avatar" class="avatar">
+						<h3>FARMER'S<span> FRIEND</span></h3>
+						<a class="signUpNow" href="../DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+					</div>
+					</div>
+							
+					<div class="signInright">
+						<span onclick="document.getElementById('signIn').style.display='none'" class="close" title="Đóng">&times;</span>
+					<div class="container" style="background-color:#efe;">
+						<label for="uname"><b>Tên tài khoản</b></label>
+						<input type="text" placeholder="Nhập tên tài khoản" name="uname" required>
+
+						<label for="psw"><b>Mật Khẩu</b></label>
+						<input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+						
+						<label for="signInrole"><b>Vai trò</b></label>
+						<select id="signInrole" name="signInrole">
+							<option value="australia">Nông dân</option>
+							<option value="canada">Người mua</option>
+							<option value="usa">Cơ quan nhà nước</option>
+							<option value="canada">Admin</option>
+						</select>
+						
+						<button type="submit">Đăng nhập</button>
+						<label style="font-size:17px;">
+							<input type="checkbox" checked="checked" name="remember"></input> Lưu tên tài khoản
+						</label>
+						<div class="forgotpw">
+							<span class="psw"><a href="#"> Quên mật khẩu? </a></span>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+			
+			<div class="search-container">
+				<form action="" class="search-bar">
+					<input type="search" name="search" placeholder="Tìm kiếm...">
+						<button class="search-btn" type="submit" href="#">
+							<i class="fa fa-search"></i>
+						</button>
+					</input>
+				</form>
+			</div>
+			
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveMenu()">&#9776;</a>
+		</div>
+
+		<div class="content">
+			<div class="bodycontent">
+				<form class="modal-content" action="/action_page.php">
+					<div class="container">
+						<h1 style="text-align:center;">ĐĂNG KÍ</h1>
+						<span style="color:red; margin-left:20px;">* bắt buộc </span>
+						
+						<table class="formAreaName">
+							<tr>
+								<td><hr /></td>
+								<td class="ftext">Thiết lập tài khoản</td>
+								<td width="10%"><hr /></td>
+							</tr>
+						</table>
+						
+						<div class="formArea fleft">
+							<div class="enterarea">
+								<label for="signUprole"><b>Vai trò<span>*</span></b></label>
+								<select id="signUprole" name="signUprole" onchange="chooseRole();">
+									<option value="ND"><p>Nông dân</p></option>
+									<option value="NM"><p>Người mua</p></option>
+									<option value="CQ"><p>Cơ quan nhà nước</p></option>
+								</select>
+							</div>
+							
+							<div class="enterarea">
+								<label for="username"><b>Tên tài khoản<span>*</span></b></label>
+								<input type="text" placeholder="Nhập tên tài khoản" name="username" required>
+							</div>
+									
+							<div class="enterarea">
+								<label for="representativename"><b>Tên người đại diện<span>*</span></b></label>
+								<input type="text" placeholder="Nhập tên người đại diện" name="representativename" required>
+							</div>
+						</div>
+						
+						<div class="formArea fright">					
+							<div class="enterarea">
+								<label for="email"><b>Địa chỉ Email<span>*</span></b></label>
+								<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Nhập địa chỉ Email" name="email" required>
+							</div>
+									
+							<div class="enterarea"> 
+								<label for="psw"><b>Mật khẩu<span>*</span></b></label>
+								<input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+							</div>
+									
+							<div class="enterarea">
+								<label for="psw-repeat"><b>Nhập lại mật khẩu<span>*</span></b></label>
+								<input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required>
+							</div>		
+						</div>
+						
+						<div id="formFarmer">
+							<table class="formAreaName">
+								<tr>
+									<td><hr /></td>
+									<td class="ftext">Thông tin nông dân</td>
+									<td width="10%"><hr /></td>
+								</tr>
+							</table>
+							
+							<div class="formArea fleft">
+								
+								<div class="enterarea">
+									<label for="farmaddress"><b>Địa chỉ cơ sở<span>*</span></b></label>
+									<input type="text" placeholder="Nhập địa chỉ cơ sở" name="farmaddress" required>
+								</div>
+								
+								<div class="enterarea">
+									<label for="farmnum"><b>Số điện thoại cơ sở</b></label>
+									<input type="tel" id="phone" name="phone" placeholder="84-12-345-6789" name="farmnum" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}">
+								</div>
+								
+								<div class="enterarea">
+									<label for="farmfax"><b>Số fax cơ sở</b></label>
+									<input type="tel" placeholder="84-12-345-6789" name="farmfax" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}">
+								</div>
+								
+							</div>
+							
+							<div class="formArea fright">
+								
+								<div class="enterarea">
+									<label for="productrole"><b>Loại hình sản xuất<span>*</span></b></label>
+									<select id="productrole" name="productrole">
+										<option value="Nông sản"><p>Nông sản</p></option>
+										<option value="Lâm sản"><p>Lâm sản</p></option>
+										<option value="Thuỷ sản"><p>Thuỷ sản</p></option>
+									</select>
+								</div>
+								
+								<div class="enterarea">
+									<label for="farmdescribe"><b>Mô tả</b></label>
+									<textarea rows="8" cols="50" name="comment" form="usrform"  placeholder="Mô tả sản phẩm và cơ sở" name="farmdescribe"></textarea>
+								</div>
+							</div>
+							
+							<hr width="100%">
+							<div class="doneSignUp">
+								<p>Nội dung <a href="#" style="color:dodgerblue">điều khoản và chính sách của Farmer's Friend</a>.</p>
+								<p style="text-align:center;"><button type="submit" class="signupbtn">Đăng kí</button></p>
+							</div>
+						</div>
+						
+						<div id="formBusiness">
+							<table class="formAreaName">
+								<tr>
+									<td><hr /></td>
+									<td class="ftext">Thông tin doanh nghiệp / người mua</td>
+									<td width="10%"><hr /></td>
+								</tr>
+							</table>
+							
+							<div class="formArea fleft">
+								
+								<div class="enterarea">
+									<label for="businessaddress"><b>Địa chỉ<span>*</span></b></label>
+									<input type="text" placeholder="Nhập địa chỉ" name="businessaddress" required>
+								</div>
+								
+								<div class="enterarea">
+									<label for="businessnum"><b>Số điện thoại<span>*</span></b></label>
+									<input type="tel" id="phone" name="phone" placeholder="84-12-345-6789" name="businessnum" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" required>
+								</div>
+								
+							</div>
+							
+							<div class="formArea fright">
+								
+								<div class="enterarea">
+									<label for="businessfax"><b>Số fax</b></label>
+									<input type="tel" placeholder="84-12-345-6789" name="businessfax" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}">
+								</div>
+								
+								<div class="enterarea">
+									<label for="businesslicense"><b>Giấy phép đăng kí kinh doanh</b></label>
+									<input type="text" placeholder="Nhập giấy phép đăng kí kinh doanh" name="businesslicense">
+								</div>
+								
+							</div>
+							
+							<hr width="100%">
+							<div class="doneSignUp">
+								<p>Nội dung <a href="#" style="color:dodgerblue">điều khoản và chính sách của Farmer's Friend</a>.</p>
+								<p style="text-align:center;"><button type="submit" class="signupbtn">Đăng kí</button></p>
+							</div>
+						</div>
+						
+						<div id="formGoverment">
+							<table class="formAreaName">
+								<tr>
+									<td><hr /></td>
+									<td class="ftext">Thông tin cơ quan</td>
+									<td width="10%"><hr /></td>
+								</tr>
+							</table>
+							
+							<div class="formArea fleft">
+								
+								<div class="enterarea">
+									<label for="govermentaddress"><b>Địa chỉ cơ quan<span>*</span></b></label>
+									<input type="text" placeholder="Nhập địa chỉ cơ quan" name="govermentaddress" required>
+								</div>
+								
+								<div class="enterarea">
+									<label for="govermentnum"><b>Số điện thoại cơ quan<span>*</span></b></label>
+									<input type="tel" id="phone" name="phone" placeholder="84-12-345-6789" name="govermentnum" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" required>
+								</div>
+								
+							</div>
+							
+							<div class="formArea fright">
+								
+								<div class="enterarea">
+									<label for="govermentfax"><b>Số fax cơ quan<span>*</span></b></label>
+									<input type="tel" placeholder="84-12-345-6789" name="govermentfax" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" required>
+								</div>
+								
+								<div class="enterarea">
+									<label for="govermentlicense"><b>Giấy phép đăng kí hoạt động<span>*</span></b></label>
+									<input type="text" placeholder="Giấy phép đăng kí hoạt động của cơ quan" name="govermentlicense" required>
+								</div>
+								
+							</div>
+							
+							<hr width="100%">
+							<div class="doneSignUp">
+								<p>Nội dung <a href="#" style="color:dodgerblue">điều khoản và chính sách của Farmer's Friend</a>.</p>
+								<p style="text-align:center;"><button type="submit" class="signupbtn">Đăng kí</button></p>
+							</div>
+						</div>
+						
+					</div>
+				</form>
+			</div>
+			
+			<div id="about" class="footer" style="background-color:black;color:white;">
+				<footer class="footer-distributed">
+				
+					<div class="footer-left">
+						<h3>
+						<img class="logoft" src="image/logo.png">
+						FARMER'S<span> FRIEND</span></h3>
+						<p class="footer-links">
+							<a href="../index.html">Trang chủ</a> | <a href="#myTopnav">Cửa hàng</a> | 
+							<a href="#myTopnav">Khuyến nông </a> | <a href="#about">Hỗ Trợ </a>
+						</p>
+						
+					</div>
+ 
+					<div class="footer-center">
+ 
+						<div><button onclick="copyToClipboard('message')"><i class="fa fa-map-marker"></i></button>
+							<p><span>03 Ngu Hanh Son Street</span> Danang, Vietnam</p>
+							<p style="display: none;" id="message">03 Ngu Hanh Son Street, Danang, Vietnam</p></div>
+						<div><button onclick="copyToClipboard('message1')"><i class="fa fa-phone"></i></button>
+							<p id="message1">+84 123 4567 890</p></div>
+						<div><button onclick="copyToClipboard('message2')"><i class="fa fa-envelope"></i></button>
+							<p><a id="message2">fsfteam@vku.udn.vn</a></p></div>
+ 
+					</div>
+ 
+					<div class="footer-right">
+ 
+						<p class="footer-company-about">
+							<span>FsF Team company</span>
+							Web Farmer's Friend is a forum for Farmers, Businessmens &amp; Government Agency for Agriculture.
+						</p>
+ 
+						<div class="footer-icons">
+							<a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+							<a class="gg" href="#"><i class="fa fa-google"></i></a>
+							<a class="inst" href="#"><i class="fa fa-instagram"></i></a>
+							<a class="twt" href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+ 
+					</div>
+					<hr style="margin-top:40px;">
+					<p class="footer-company-name">Copyright &copy; 2021 FsF Team . All rights reserved.</p>
+				</footer>
+			</div>
+			
+		</div>
+		
+		<script>
+			window.onscroll = function() {stickyMenu()};
+
+			var navbar = document.getElementById("myTopnav");
+			var sticky = navbar.offsetTop;
+
+			function stickyMenu() {
+				if (window.pageYOffset > sticky) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+			
+			// Get the modal
+			var modal = document.getElementById('signIn');
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == signIn) {
+					modal.style.display = "none";
+				}
+			}
+			
+			<!-- CONTENT -->
+
+			var role1 = document.getElementById('formFarmer');
+			var role2 = document.getElementById('formBusiness');
+			var role3 = document.getElementById('formGoverment');
+			
+			// When the user clicks anywhere outside of the modal, close it
+			function chooseRole() {
+				var selectBox = document.getElementById("signUprole");
+				var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+				if (selectedValue == 'ND') {
+					role1.style.display = "block";
+					role2.style.display = "none";
+					role3.style.display = "none";
+				} else if (selectedValue == 'NM'){
+					role1.style.display = "none";
+					role2.style.display = "block";
+					role3.style.display = "none";
+				} else {
+					role1.style.display = "none";
+					role2.style.display = "none";
+					role3.style.display = "block";
+				}
+			}
+		</script>
+	</body>
+</html>

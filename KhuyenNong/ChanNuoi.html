@@ -1,0 +1,412 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/png" href="image/logo.png"/>
+		<title>FsF - Chăn nuôi</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="function.js"></script>
+		
+		<!-- Tab -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+
+		<div class="topnav" id="myTopnav">
+			<a class="logo"><img src="image/logo.png" style="width:100%;"></a>
+			<a href="../index.html"><i class="fa fa-home"></i> Trang Chủ</a>
+			<a href="../NongDan/NongDan.html"><i class="fa fa-address-card-o"></i> Nông Dân</a>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-archive"></i> Cửa Hàng
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../CuaHang/ShopNS.html">Nông Sản</a>
+					<a href="../CuaHang/ShopLS.html">Lâm Sản</a>
+					<a href="../CuaHang/ShopTS.html">Thuỷ Sản</a>
+				</div>
+			</div>
+			<div class="dropdown active">
+				<button class="dropbtn"><i class="fa fa-question-circle"></i> Khuyến Nông 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../KhuyenNong/TrongTrot.html">Trồng Trọt</a>
+					<a href="#">Chăn Nuôi</a>
+					<a href="../KhuyenNong/KHCN.html">Khoa Học - Công Nghệ</a>
+				</div>
+			</div>
+			<a href="#about"><i class="fa fa-info-circle"></i> Liên Hệ</a>
+			
+			<a class="sign" href="#login" onclick="document.getElementById('signIn').style.display='block'" style="width:auto;"><i class="fa fa-sign-in"></i> Đăng Nhập</a>
+			<div id="signIn" class="signIn">
+				<form class="signIn-content animate" method="post">
+					
+					<div class="signInleft">
+					<div class="imgcontainer">
+						<img src="image/logo.png" alt="Avatar" class="avatar">
+						<h3>FARMER'S<span> FRIEND</span></h3>
+						<a class="signUpNow" href="../DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+					</div>
+					</div>
+							
+					<div class="signInright">
+						<span onclick="document.getElementById('signIn').style.display='none'" class="close" title="Đóng">&times;</span>
+					<div class="container" style="background-color:#efe;">
+						<label for="uname"><b>Tên tài khoản</b></label>
+						<input type="text" placeholder="Nhập tên tài khoản" name="uname" required>
+
+						<label for="psw"><b>Mật Khẩu</b></label>
+						<input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+						
+						<label for="signInrole"><b>Vai trò</b></label>
+						<select id="signInrole" name="signInrole">
+							<option value="australia">Nông dân</option>
+							<option value="canada">Người mua</option>
+							<option value="usa">Cơ quan nhà nước</option>
+							<option value="canada">Admin</option>
+						</select>
+						
+						<button type="submit">Đăng nhập</button>
+						<label style="font-size:17px;">
+							<input type="checkbox" checked="checked" name="remember"></input> Lưu tên tài khoản
+						</label>
+						<div class="forgotpw">
+							<span class="psw"><a href="#"> Quên mật khẩu? </a></span>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+			
+			<a class="sign" href="../DangKi/DangKi.html"><i class="fa fa-user-plus"></i> Đăng Kí</a>
+			
+			<div class="search-container">
+				<form action="" class="search-bar">
+					<input type="search" name="search" placeholder="Tìm kiếm...">
+						<button class="search-btn" type="submit" href="#">
+							<i class="fa fa-search"></i>
+						</button>
+					</input>
+				</form>
+			</div>
+			
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveMenu()">&#9776;</a>
+		</div>
+
+		<div class="content">
+			<div class="bodycontent">
+				<div id="Body" class="container mb-5">
+					<div class="container-fluid">
+						<div class="slideshow-container">
+						  <div class="mySlides1">
+							<img src="image/TrongTrotWP.jpg" style="width:100%" height="200">
+						  </div>
+
+						  <div class="mySlides1">
+							<img src="image/ChanNuoiWP.jpg" style="width:100%" height="200">
+						  </div>
+
+						  <div class="mySlides1">
+							<img src="image/KHCNWP.jpg" style="width:100%" height="200">
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+						</div>
+					</div>
+						<div class="container border border-rounded ml-4 mr-4" style="width:95%;">
+							<ul class="nav nav-tabs">
+								<li><a data-toggle="tab" href="#TrongTrot">Trồng Trọt</a></li>
+								<li class="active"><a data-toggle="tab" href="#ChanNuoi">Chăn Nuôi</a></li>
+								<li><a data-toggle="tab" href="#KHCN">Khoa học - Công nghệ</a></li>
+							</ul>
+								<div class="tab-content">
+
+									<a href="info/TT.html"><div id="TrongTrot" class="tab-pane fade in active pl-3"><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn1.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Quy trình quản lý tổng hợp (IPM) sâu đục thân mía bốn vạch đầu nâu tại Tây Ninh</h3>
+												<p> Quy trình này áp dụng cho các tổ chức, cá nhân trồng mía nguyên liệu tại tỉnh Tây Ninh và các vùng trồng mía có điều kiện canh tác tương tự.Chọn giống mía tốt, ít bị nhiễm sâu đục thân mía bốn vạch đầu nâu có năng suất, chất lượng cao như giống mía KK3, LK92-11,...Hom làm giống là giống thuần có nguồn gốc rõ ràng, chọn hom giống từ cây mía có thời gian sinh trưởng từ 7 - 10 tháng tuổi.Hom giống lấy từ 1/3 ở đoạn giữa thân cây mía, chiều dài của hom giống khoảng 2 - 3 mắt mầm, có mầm ngủ khỏe.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn2.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Quy trình sử dụng phân bón hữu cơ phối hợp phân vô cơ cho sản xuất rau an toàn ở các tỉnh phía Bắc</h3>
+												<p> Quy trình được áp dụng đối với các loại rau chính (cà chua, dưa chuột, rau muống, mồng tơi, cải bắp, củ cải) và các loại rau có đặc điểm nông sinh học tương tự ở các vùng trồng rau an toàn có phân hữu cơ hoặc có phụ phẩm trồng trọt, chất thải chăn nuôi và có chế phẩm sinh học.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/TT1.jpeg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Biện pháp quản lý tổng hợp sâu bệnh gây hại chanh leo</h3>
+												<p> Quy trình được áp dụng trong quản lý tổng hợp sâu bệnh gây hại chính trên cây chanh leo ở các tỉnh thuộc vùng Tây Nguyên, Bắc Trung Bộ, Tây Bắc và các vùng trồng chanh leo có điều kiện sinh thái tương tự.<br>
+												Sử dụng cây giống của những cơ sở sản xuất giống trong và ngoài nước có uy tín, chất lượng tốt. Các cây giống phải đảm bảo chứng nhận sạch virus và không nhiễm các nấm bệnh truyền qua đất như Fusarium, Phytophthora,…</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn3.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Kỹ thuật ủ phân hữu cơ từ phụ phẩm trồng trọt và chất thải chăn nuôi bằng chế phẩm vi sinh vật</h3>
+												<p>Phân hữu cơ là loại phân bón có chứa các chất dinh dưỡng đa, trung, vi lượng dưới dạng các hợp chất hữu cơ, dùng trong canh tác và sản xuất nông nghiệp. Phân hữu cơ có nguồn gốc và được hình thành từ tàn dư thân, lá cây, phụ phẩm sản xuất nông nghiệp, phân, chất thải của gia súc, gia cầm… Việc bón phân hữu cơ sẽ giúp cải tạo đất, tăng độ tơi xốp, phì nhiêu cho đất qua việc cung cấp, bổ sung các chất hữu cơ, mùn, vi sinh vật và trả lại lượng hữu cơ cho mặt đất.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn4.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Quản lý tổng hợp bệnh héo vàng lá chuối</h3>
+												<p>Nhằm chủ động phòng chống bệnh héo vàng lá chuối, Cục BVTV đã phối hợp với Viện Nghiên cứu Rau quả, Viện BVTV bổ sung, xây dựng và ban hành Quy trình quản lý tổng hợp bệnh héo vàng lá chuối để tuyên truyền, hướng dẫn nông dân áp dụng phòng chống bệnh hiệu quả góp phần thúc đẩy sản xuất chuối bền vững.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn5.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Kỹ thuật trồng và chăm sóc cây dưa hấu</h3>
+												<p>Dưa hấu (Citrullus lanatus) là một loài thực vật thuộc họ Bầu bí (Cucurbitaceae), có giá trị dinh dưỡng và thương mại cao. Ở Việt Nam, diện tích trồng dưa hấu ngày càng tăng, sản xuất dưa hấu mang lại thu nhập cao, giải quyết công ăn việc làm và tăng thu nhập cho người dân.</p>
+											</div>
+										</div>
+									</div>
+
+									<div id="ChanNuoi" class="tab-pane fade pl-3"><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn6.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Phòng chống đói, rét cho đàn vật nuôi trong mùa đông</h3>
+												<p>Để chủ động tăng cường phòng chống đói, rét cho vật nuôi, giảm thiểu thiệt hại về chăn nuôi trong vụ Đông-Xuân 2020-2021, đồng thời bảo đảm phát triển chăn nuôi, hoàn thành kế hoạch năm 2020-2021, Trung tâm Khuyến nông Quốc gia hướng dẫn biện pháp phòng chống đói, rét cho đàn vật nuôi trong mùa đông.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn7.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Giới thiệu một số giống gà bản địa, đặc sản ở miền Bắc và tiến bộ kỹ thuật, TCVN về giống</h3>
+												<p>Việc hiểu rõ về năng suất, chất lượng của một số giống gà bản địa, đặc sản, con lai là rất quan trọng giúp người chăn nuôi lựa chọn được giống gà phù hợp để phát triển chăn nuôi của gia đình.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn8.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Kỹ thuật làm đệm lót sinh học cho bò nuôi thịt, vỗ béo bằng chế phẩm Emuniv</h3>
+												<p>Hiện nay, trên thị trường có rất nhiều chế phẩm vi sinh dùng để sử dụng làm đệm lót sinh học trong chăn nuôi gia súc, gia cầm nói chung và trong chăn nuôi bò thịt nói riêng. Sau đây chúng tôi xin giới thiệu kỹ thuật làm đệm lót sinh học cho bò nuôi thịt, vỗ béo bằng chế phẩm vi sinh EMUNIV.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/CN1.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Hướng dẫn phòng bệnh cúm cho gia cầm</h3>
+												<p>Tin tức về cúm gia cầm đang xuất hiện trở lại trên toàn cầu. Các trường hợp H7N3 được xác nhận tại Hoa Kỳ; H5N8 đã được báo cáo ở Ba Lan, Hungary, Bulgaria, Cộng hòa Séc, Ukraine và Đức trong khi H5N6 và H5N1 đã được phát hiện tại Việt Nam và Philippines. Các quốc gia này tiêu hủy hàng ngàn con gia cầm trong năm nay để ngăn chặn virus cúm gia cầm lây lan. Trong bài viết này, các anh chị sẽ tìm hiểu thêm về các dấu hiệu và triệu chứng của cúm gia cầm, cách phòng ngừa cúm gia cầm và phương pháp điều trị cúm gia cầm.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn9.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Phòng chống dịch bệnh cho vật nuôi trong mùa mưa bão</h3>
+												<p>Thời tiết mưa bão ảnh hưởng lớn đến sức khỏe đàn vật nuôi, vì vậy cần phòng chống dịch bệnh cho vật nuôi trước, trong và sau mùa mưa bão. Thời tiết mưa, bão không những gây khan hiếm nguồn thức ăn mà còn dễ phát sinh dịch bệnh trên đàn gia súc gia cầm. Mặt khác khi mưa to có thể gây ngập úng cục bộ hoặc lụt trên diện rộng tạo cơ hội phát tán mầm bệnh.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn10.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Chăn nuôi an toàn sinh học trong tái đàn/ tăng đàn lợn</h3>
+												<p>Thực tế hiện nay, Bộ NN & PTNT đã cho phép các doanh nghiệp việc nhập lợn thương phẩm về nuôi, các trại và các hộ chăn nuôi sẽ đẩy mạnh tái đàn. Tuy nhiên để tái đàn thành công, phòng chống bệnh dịch tả lợn châu Phi tốt, người nuôi cần thực hiện các biện pháp an toàn sinh học nghiêm ngặt.</p>
+											</div>
+										</div><hr>
+									</div>
+
+									<div id="KHCN" class="tab-pane fade pl-3"><hr>
+										
+										<a href="info/pageKHCN.html"><div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn11.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Giải pháp sinh thái để bảo vệ cây trồng</h3>
+												<p>Trước những tác động ngày càng phức tạp và khó lường của biến đổi khí hậu ảnh hưởng nghiêm trọng đến sản xuất nông nghiệp đặt ra những thách thức cho con người trong việc tìm kiếm những biện pháp phát triển một nền nông nghiệp sinh thái bền vững.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn12.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Nâng cao năng suất sò huyết trong mô hình nuôi kết hợp tôm sú</h3>
+												<p>Mô hình nuôi sò huyết trong ao nuôi tôm sú được đánh giá là bền vững, chi phí thấp, hiệu quả cao, có thể áp dụng và nhân rộng cho bà con nuôi tôm đang gặp nhiều khó khăn do vấn đề dịch bệnh trên tôm sú.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn13.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Quy trình lắp đặt hệ thống ghi nhật ký khai thác thủy sản điện tử MECOM NKT-01</h3>
+												<p>Hệ thống ghi nhật ký khai thác thủy sản điện tử MECOM NKT-01 do Công ty Cổ phần thiết bị hàng hải - MECOM tự nghiên cứu, sản xuất và đã được sử dụng trên 185 tàu cá ở các tỉnh như: Quảng Trị, Quảng Ngãi, Bình Định, Bình Thuận.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/KHCN1.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Ứng dụng khoa học và công nghệ trong nông nghiệp</h3>
+												<p>Hiện nay, trên địa bàn UBND TP có nhiều nhiệm vụ khoa học và công nghệ cấp TP và cấp nhà nước về sản xuất nông nghiệp được triển khai. Hầu hết các nhiệm vụ khoa học, công nghệ đều chú trọng nghiên cứu và triển khai có địa chỉ áp dụng cụ thể qua đó đã phát huy được hiệu quả của sản xuất nông nghiệp trong thời đại khoa học kỹ thuật.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn14.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Hướng dẫn kỹ thuật trồng cây giổi ăn hạt bằng cây ghép</h3>
+												<p>Giổi ăn hạt (giổi, giổi ngọt, giổi lúa) là cây bản địa gỗ lớn, thường xanh, cao 25-30 m, đường kính trung bình từ 40-60 cm, thân tròn thẳng, gốc có bạnh vè nhỏ. Giổi thường phân bố từ Lào Cai đến các tỉnh Bắc Trung Bộ và Tây Nguyên.</p>
+											</div>
+										</div><hr>
+										<div class="row p-2">
+											<div class="col-sm-3">
+												<img src="image/kn15.jpg" width="200px">
+											</div>
+											<div class="col-sm-9 p-1">
+												<h3>Sử dụng công cụ kỹ thuật số cho trang trại hữu cơ</h3>
+												<p>Suzana Dimitrievska là nông dân sản xuất nông nghiệp hữu cơ ở Bắc Macedonia. Vốn là một phụ nữ mạnh mẽ, có học nên việc tiếp nhận công nghệ mới khá dễ dàng với Suzana. Hiện tại cô đang sử dụng Công nghệ Truyền thông Thông tin (ICT) để tăng hiệu quả sản xuất của trang trại.</p>
+											</div>
+										</div><hr>
+										
+									</div>
+									
+								</div>
+						</div>
+				</div>
+			</div>
+			
+			<div id="about" class="footer" style="background-color:black;color:white;">
+				<footer class="footer-distributed">
+				
+					<div class="footer-left">
+						<h3>
+						<img class="logoft" src="image/logo.png">
+						FARMER'S<span> FRIEND</span></h3>
+						<p class="footer-links">
+							<a href="../index.html">Trang chủ</a> | <a href="#myTopnav">Cửa hàng</a> | 
+							<a href="#myTopnav">Khuyến nông </a> | <a href="#about">Hỗ Trợ </a>
+						</p>
+						<br>
+						<a class="signUpNow2" href="../DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+						
+					</div>
+ 
+					<div class="footer-center">
+ 
+						<div><button title="Địa chỉ" onclick="copyToClipboard('message')">
+							<i class="fa fa-map-marker"></i></button>
+							<p><span>03 Ngu Hanh Son Street</span> Danang, Vietnam</p>
+							<p style="display: none;" id="message">03 Ngu Hanh Son Street, Danang, Vietnam</p></div>
+						<div><button title="Số điện thoại" onclick="copyToClipboard('message1')">
+							<i class="fa fa-phone"></i></button>
+							<p id="message1">+84 123 4567 890</p></div>
+						<div><button title="Email" onclick="copyToClipboard('message2')">
+							<i class="fa fa-envelope"></i></button>
+							<p><a id="message2">fsfteam@vku.udn.vn</a></p></div>
+ 
+					</div>
+ 
+					<div class="footer-right">
+ 
+						<p class="footer-company-about">
+							<span>FsF Team company</span>
+							Web Farmer's Friend is a forum for Farmers, Businessmens &amp; Government Agency for Agriculture.
+						</p>
+ 
+						<div class="footer-icons">
+							<a class="fb" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+							<a class="gg" title="Google" href="#"><i class="fa fa-google"></i></a>
+							<a class="inst" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+							<a class="twt" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+ 
+					</div>
+					<hr style="margin-top:40px;">
+					<p class="footer-company-name">Copyright &copy; 2021 FsF Team . All rights reserved.</p>
+				</footer>
+			</div>
+			
+		</div>
+		
+		<script>
+			window.onscroll = function() {stickyMenu()};
+
+			var navbar = document.getElementById("myTopnav");
+			var sticky = navbar.offsetTop;
+
+			function stickyMenu() {
+				if (window.pageYOffset > sticky) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+			
+			//close login form
+			window.onscroll = function() {stickyMenu()};
+
+			var navbar = document.getElementById("myTopnav");
+			var sticky = navbar.offsetTop;
+
+			function stickyMenu() {
+				if (window.pageYOffset > sticky) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+			
+			// Carousel
+			var slideIndex = [2];
+			var slideId = ["mySlides1"]
+			showSlides(1, 0);
+			showSlides(1, 1);
+
+			function plusSlides(n, no) {
+			  showSlides(slideIndex[no] += n, no);
+			}
+
+			function showSlides(n, no) {
+			  var i;
+			  var x = document.getElementsByClassName(slideId[no]);
+			  if (n > x.length) {slideIndex[no] = 1}    
+			  if (n < 1) {slideIndex[no] = x.length}
+			  for (i = 0; i < x.length; i++) {
+				 x[i].style.display = "none";  
+			  }
+			  x[slideIndex[no]-1].style.display = "block";  
+			}
+			
+		</script>
+	</body>
+</html>

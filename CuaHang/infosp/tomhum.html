@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FsF - Thuỷ sản - Tôm Hùm</title>
+    <link rel="stylesheet" href="sp.css">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- ------------------------MENU---------------------->
+
+<div class="topnav" id="myTopnav">
+			<a class="logo"><img src="logo.png" style="width:100%;"></a>
+			<a href="../../index" class="active"><i class="fa fa-home"></i> Trang Chủ</a>
+			<a href="../../NongDan/NongDan.html"><i class="fa fa-address-card-o"></i> Nông Dân</a>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-archive"></i> Cửa Hàng
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../ShopNS.html">Nông Sản</a>
+					<a href="../ShopLS.html">Lâm Sản</a>
+					<a href="../ShopTS.html">Thuỷ Sản</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-question-circle"></i> Khuyến Nông 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="../../KhuyenNong/TrongTrot.html">Trồng Trọt</a>
+					<a href="../../KhuyenNong/ChanNuoi.html">Chăn Nuôi</a>
+					<a href="../../KhuyenNong/KHCN.html">Khoa Học - Công Nghệ</a>
+				</div>
+			</div>
+			<a href="#about"><i class="fa fa-info-circle"></i> Liên Hệ</a>
+			
+			<a class="sign" href="#login" onclick="document.getElementById('signIn').style.display='block'" style="width:auto;"><i class="fa fa-sign-in"></i> Đăng Nhập</a>
+			<div id="signIn" class="signIn">
+				<form class="signIn-content animate" action="/action_page.php" method="post">
+					
+					<div class="signInleft">
+					<div class="imgcontainer">
+						<img src="logo.png" alt="Avatar" class="avatar">
+						<h3>FARMER'S<span> FRIEND</span></h3>
+						<a class="signUpNow" href="../../DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+					</div>
+					</div>
+							
+					<div class="signInright">
+						<span onclick="document.getElementById('signIn').style.display='none'" class="close" title="Đóng">&times;</span>
+					<div class="container" style="background-color:#efe;">
+						<label for="uname"><b>Tên tài khoản</b></label>
+						<input type="text" placeholder="Nhập tên tài khoản" name="uname" required>
+
+						<label for="psw"><b>Mật Khẩu</b></label>
+						<input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+						
+						<label for="signInrole"><b>Vai trò</b></label>
+						<select id="signInrole" name="signInrole">
+							<option value="australia">Nông dân</option>
+							<option value="canada">Người mua</option>
+							<option value="usa">Cơ quan nhà nước</option>
+							<option value="canada">Admin</option>
+						</select>
+						
+						<button type="submit">Đăng nhập</button>
+						<label style="font-size:17px;">
+							<input type="checkbox" checked="checked" name="remember"></input> Lưu tên tài khoản
+						</label>
+						<div class="forgotpw">
+							<span class="psw"><a href="#"> Quên mật khẩu? </a></span>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+			
+			<a class="sign" href="../../DangKi/DangKi.html"><i class="fa fa-user-plus"></i> Đăng Kí</a>
+			
+			<div class="search-container">
+				<form action="" class="search-bar">
+					<input type="search" name="search" placeholder="Tìm kiếm...">
+						<button class="search-btn" type="submit" href="#">
+							<i class="fa fa-search"></i>
+						</button>
+					</input>
+				</form>
+			</div>
+			
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveMenu()">&#9776;</a>
+		</div>
+
+<!-- ==========MENU=========== -->
+    <div class="container"> 
+    <div class="card"> 
+      <div class="container-fliud"> 
+        <div class="wrapper row"> 
+          <div class="preview col-md-6"> 
+          <div class="preview-pic tab-content"> 
+          <div class="tab-pane active" id="pic-1"><img src="https://media.travelmag.vn/center/960x576/files/content/2021/05/25/tom-hum-bong-size-lon-01062417.jpg" alt="">
+          </div> 
+          <div class="tab-pane" id="pic-2"><img src="https://product.hstatic.net/1000166699/product/ala_hap_db799f116ecd4fa3a7fce67351b17a3c_master.jpg" alt="">
+          </div> 
+          <div class="tab-pane" id="pic-3"><img src="https://muabantomhum.com/upload/files/sanpham/mua-ban-tom-hum-tuoi-song-(10).jpg" alt="">
+          </div> 
+          <div class="tab-pane" id="pic-4"><img src="https://product.hstatic.net/1000166699/product/ala_hap_db799f116ecd4fa3a7fce67351b17a3c_master.jpg" alt="">
+          </div> 
+          <div class="tab-pane" id="pic-5"><img src="https://muabantomhum.com/upload/files/sanpham/mua-ban-tom-hum-tuoi-song-(10).jpg" alt="">
+          </div>  
+     </div> 
+     <ul class="preview-thumbnail nav nav-tabs">
+        <div class="menu-icon"><span>Menu</span></div> 
+      <li class="active"><a data-target="#pic-1" data-toggle="tab">
+        <img src="https://media.travelmag.vn/center/960x576/files/content/2021/05/25/tom-hum-bong-size-lon-01062417.jpg" ></a>
+      </li> 
+      <li><a data-target="#pic-2" data-toggle="tab">
+        <img src="https://product.hstatic.net/1000166699/product/ala_hap_db799f116ecd4fa3a7fce67351b17a3c_master.jpg" ></a>
+      </li> 
+      <li><a data-target="#pic-3" data-toggle="tab">
+        <img src="https://muabantomhum.com/upload/files/sanpham/mua-ban-tom-hum-tuoi-song-(10).jpg" ></a>
+      </li> 
+      <li><a data-target="#pic-4" data-toggle="tab">
+        <img src="https://product.hstatic.net/1000166699/product/ala_hap_db799f116ecd4fa3a7fce67351b17a3c_master.jpg" ></a>
+      </li> 
+      <li><a data-target="#pic-5" data-toggle="tab">
+        <img src="https://muabantomhum.com/upload/files/sanpham/mua-ban-tom-hum-tuoi-song-(10).jpg" ></a>
+      </li> 
+     </ul> 
+    </div> 
+    <div class="details col-md-6"> 
+     <h3 class="product-title">Tôm Hùm</h3> 
+     <div class="rating"> 
+      <div class="stars"> 
+        <span class="fa fa-star checked"></span> 
+        <span class="fa fa-star checked"></span> 
+        <span class="fa fa-star checked"></span> 
+        <span class="fa fa-star checked"></span> 
+        <span class="fa fa-star"></span> 
+      </div> 
+      <span class="review-no">153 đánh giá</span> 
+     </div> 
+     <div class="product-short-description">
+        <p><i class="fa fa-check-square-o">&nbsp;&nbsp;</i>Gọi mua hàng 1900 636 648</p>
+        <p><i class="fa fa-check-square-o">&nbsp;&nbsp;</i>Đảm bảo tươi ngon</p>
+        <p><i class="fa fa-check-square-o" style="font-size: 14.4px;">&nbsp;&nbsp;</i><span style="font-size: 14.4px;">Giao hàng trực tiếp từ vườn</span></p>
+        <p><i class="fa fa-check-square-o" style="font-size: 14.4px;">&nbsp;&nbsp;</i><span style="font-size: 14.4px;">Đổi trả trong vòng 24h</span></p>
+    </div>
+     <p class="product-description">Điểm nhấn của loại tôm hùm này nằm ở sự quý hiếm, khó đánh bắt vì chúng thường chọn nơi cư trú là những bãi đá ngầm nằm ở đáy biến. Nước ở khu vực chúng sinh sống có độ trong xanh và nhiệt độ cực lạnh nên thịt của Tôm hùm Alaska có màu trắng muốt cùng vị ngọt đậm rất kích thích vị giác của người dùng. Những con Tôm hùm này thường được đánh bắt theo cách thủ công nhằm đảm bảo chất lượng tốt nhất cho mỗi cá thể. Không chỉ vậy, sau khi mang lên bờ việc giữ cho Tôm hùm tiếp tục sống chính là vấn đề quan trọng với ngư dân. Hầu hết, Tôm hùm được giữ trong những bể chứa nước biển nội địa có độ lạnh và mặn gần với môi trường tự nhiên. Tuy nhiên, có thể đánh giá Tôm hùm Alaska (Tôm hùm Mỹ) là loài có sức sống cao, chúng có thể sống sót đến 72 giờ dù không sống trong môi trường đủ chuẩn. </p> 
+     <h4 class="price">Giá bán: 470.000 đ</h4> 
+     <p class="vote"><strong>95%</strong> người mua hài lòng với sản phẩm này <strong>(87 bình chọn)</strong>
+     </p>  
+     <div class="action"> 
+        <a href="#" target="_blank">            
+            <button class="add-to-cart btn btn-default" type="button">MUA NGAY</button>            
+        </a> 
+        <a href="#" target="_blank">            
+            <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>            
+        </a> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div>
+</div> 
+<!-- FOOTER -->
+			<div id="about" class="footer" style="background-color:black;color:white;">
+				<footer class="footer-distributed">
+				
+					<div class="footer-left">
+						<h3>
+						<img class="logoft" src="logo.png">
+						FARMER'S<span> FRIEND</span></h3>
+						<p class="footer-links">
+							<a href="../../index.html">Trang chủ</a> | <a href="#myTopnav">Cửa hàng</a> | 
+							<a href="#myTopnav">Khuyến nông </a> | <a href="#about">Hỗ Trợ </a>
+						</p>
+						<br>
+						<a class="signUpNow2" href="../../DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+						
+					</div>
+ 
+					<div class="footer-center">
+ 
+						<div><button title="Địa chỉ" onclick="copyToClipboard('message')">
+							<i class="fa fa-map-marker"></i></button>
+							<p><span>03 Ngu Hanh Son Street</span> Danang, Vietnam</p>
+							<p style="display: none;" id="message">03 Ngu Hanh Son Street, Danang, Vietnam</p></div>
+						<div><button title="Số điện thoại" onclick="copyToClipboard('message1')">
+							<i class="fa fa-phone"></i></button>
+							<p id="message1">+84 123 4567 890</p></div>
+						<div><button title="Email" onclick="copyToClipboard('message2')">
+							<i class="fa fa-envelope"></i></button>
+							<p><a id="message2">fsfteam@vku.udn.vn</a></p></div>
+ 
+					</div>
+ 
+					<div class="footer-right">
+ 
+						<p class="footer-company-about">
+							<span>FsF Team company</span>
+							Web Farmer's Friend is a forum for Farmers, Businessmens &amp; Government Agency for Agriculture.
+						</p>
+ 
+						<div class="footer-icons">
+							<a class="fb" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+							<a class="gg" title="Google" href="#"><i class="fa fa-google"></i></a>
+							<a class="inst" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+							<a class="twt" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+ 
+					</div>
+					<hr style="margin-top:40px;">
+					<p class="footer-company-name">Copyright &copy; 2021 FsF Team . All rights reserved.</p>
+				</footer>
+<script>
+		function copyToClipboard(elementId) {
+	var aux = document.createElement("input");
+	aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+	document.body.appendChild(aux);
+	aux.select();
+	document.execCommand("copy");
+	document.body.removeChild(aux);
+	alert("Đã sao chép vào khay nhớ tạm:\n" + aux.value);
+}
+	  </script>
+</body>
+</html>

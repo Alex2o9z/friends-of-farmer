@@ -1,0 +1,779 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/png" href="image/logo.png"/>
+		<title>FARMER'S FRIEND</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="TrangChu/style.css">
+		<script src="TrangChu/function.js"></script>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	</head>
+	
+	<body>
+
+		<div class="topnav" id="myTopnav">
+			<a class="logo"><img src="image/logo.png" style="width:100%;"></a>
+			<a href="index.html" class="active"><i class="fa fa-home"></i> Trang Chủ</a>
+			<a href="NongDan/NongDan.html"><i class="fa fa-address-card-o"></i> Nông Dân</a>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-archive"></i> Cửa Hàng
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="CuaHang/ShopNS.html">Nông Sản</a>
+					<a href="CuaHang/ShopLS.html">Lâm Sản</a>
+					<a href="CuaHang/ShopTS.html">Thuỷ Sản</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-question-circle"></i> Khuyến Nông 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="KhuyenNong/TrongTrot.html">Trồng Trọt</a>
+					<a href="KhuyenNong/ChanNuoi.html">Chăn Nuôi</a>
+					<a href="KhuyenNong/KHCN.html">Khoa Học - Công Nghệ</a>
+				</div>
+			</div>
+			<a href="#about"><i class="fa fa-info-circle"></i> Liên Hệ</a>
+			
+			<a class="sign" href="#login" onclick="document.getElementById('signIn').style.display='block'" style="width:auto;"><i class="fa fa-sign-in"></i> Đăng Nhập</a>
+			<div id="signIn" class="signIn">
+				<form class="signIn-content animate" method="post">
+					
+					<div class="signInleft">
+					<div class="imgcontainer">
+						<img src="image/logo.png" alt="Avatar" class="avatar">
+						<h3>FARMER'S<span> FRIEND</span></h3>
+						<a class="signUpNow" href="DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+					</div>
+					</div>
+							
+					<div class="signInright">
+						<span onclick="document.getElementById('signIn').style.display='none'" class="close" title="Đóng">&times;</span>
+					<div class="container" style="background-color:#efe;">
+						<label for="uname"><b>Tên tài khoản</b></label>
+						<input type="text" placeholder="Nhập tên tài khoản" name="uname" required>
+
+						<label for="psw"><b>Mật Khẩu</b></label>
+						<input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+						
+						<label for="signInrole"><b>Vai trò</b></label>
+						<select id="signInrole" name="signInrole">
+							<option value="australia">Nông dân</option>
+							<option value="canada">Người mua</option>
+							<option value="usa">Cơ quan nhà nước</option>
+							<option value="canada">Admin</option>
+						</select>
+						
+						<button type="submit">Đăng nhập</button>
+						<label style="font-size:17px;">
+							<input type="checkbox" checked="checked" name="remember"></input> Lưu tên tài khoản
+						</label>
+						<div class="forgotpw">
+							<span class="psw"><a href="#"> Quên mật khẩu? </a></span>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+			
+			<a class="sign" href="../DangKi/DangKi.html"><i class="fa fa-user-plus"></i> Đăng Kí</a>
+			
+			<div class="search-container">
+				<form action="" class="search-bar">
+					<input type="search" name="search" placeholder="Tìm kiếm...">
+						<button class="search-btn" type="submit" href="#">
+							<i class="fa fa-search"></i>
+						</button>
+					</input>
+				</form>
+			</div>
+			
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveMenu()">&#9776;</a>
+		</div>
+
+		<div class="Content">
+			<div class="bodycontent">
+				<!-- BODY -->
+
+					<!-- --------NEWS---------- -->
+
+				<div class="container">
+						
+					<div class="row">
+						<div class="col-md-7">
+							<div class="news-left">
+								<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+									<div class="carousel-inner">
+									  <div class="carousel-item active">
+										<a href="">
+										  <img src="https://1.bp.blogspot.com/-_VME07rRJeg/YKR2SVRB4II/AAAAAAAC7Ow/ejxNPe-6omIzcP86Fj5Dfwo2Ao7q3vZVgCLcBGAsYHQ/s16000/vai%2B4.jpg" style="height: 400px;width: 666.67px;" alt="...">
+											<div class="carousel-caption d-none d-md-block">
+												<h3>Bộ trưởng Lê Minh Hoan: 'Vải em là vải vườn nhà. Em là con gái Thanh Hà xứ Đông'</h3>
+												<p>29 Tháng Mười Hai 2021-Viết Tân</p>
+											</div>
+										</a>
+									  </div>
+									  <div class="carousel-item">
+										<a href="">
+										  <img src="https://thuysanvietnam.com.vn/wp-content/uploads/2021/05/luu-y-su-dung-men-vi-sinh.jpg" style="height: 400px;width: 666.67px;" alt="...">
+											<div class="carousel-caption d-none d-md-block">
+												<h3>Những lưu ý sử dụng men vi sinh hiệu quả</h3>
+												<p>25 Tháng Năm 2021-Tấn Hữu</p>
+											</div>
+										</a>
+									  </div>
+									  <div class="carousel-item">
+										<a href="">
+										  <img src="https://thumb.ex-cdn.com/EXP/media.nongnghiep.vn/resize/600x360/files/bao_in/2021/04/12/2008-14_19_575_cuon-tham-151739.jpeg" style="height: 400px;" alt="...">
+											<div class="carousel-caption d-none d-md-block">
+												<h3>Vỏ dừa phế phẩm thành mặt hàng xuất khẩu chủ lực của Bến Tre</h3>
+												<p>9 Tháng Hai 2021-Thăng Trình</p>
+											</div>
+										</a>
+									  </div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+									  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									  <span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+									  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+									  <span class="visually-hidden">Next</span>
+									</button>
+								  </div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="news-right">
+								<div class="news-right-top">
+									<a href="">
+									  <img src="https://media.ex-cdn.com/EXP/media.nongnghiep.vn/files/linhnt/2021/05/17/nghi-quyet-120--bac-lieu-3-093441_381.jpg" class="d-block w-100" alt="...">
+									  <h3>Phát triển chuỗi giá trị tôm Bạc Liêu</h3>
+									  <p>03 Tháng Mười Hai 2020-Minh Hải</p>
+									</a>
+								</div>
+								<div class="news-right-bottom">
+									<a href="">
+									  <img src="https://media.ex-cdn.com/EXP/media.nongnghiep.vn/files/quanmd/2021/03/08/img_20210302_134650-153043_569.jpg" class="d-block w-100" alt="...">
+									  <h3>Gỡ khó cho hồi hữu cơ</h3>
+									  <p>02 Tháng Hai 2020-Lê Long</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Weather Widget by location -->
+					
+					<div class="row" style="padding-top:20px; margin-bottom:-20px;">
+						<div class="container-fluid weatherWidget">
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+							<div id="here"><a class="weatherwidget-io" value="" id ="wtwd" href="" data-label_1="Thời tiết" data-label_2="" data-theme="weather_one" ></a></div>
+							<script>
+							!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+							</script>
+							<script>	  
+							$.ajax({
+								url: "https://geolocation-db.com/jsonp",
+								jsonpCallback: "callback",
+								dataType: "jsonp",
+								success: function(location) {
+								$('#wtwd').val(location.city);
+								}
+							});
+							$(document).ready(function(){
+								if ($('#wtwd').val().search("Da Nang") == -1) {
+									$("#wtwd").attr({
+										"href" : "https://forecast7.com/en/16d05108d07/da-nang/",
+										"data-label_2" : "Đà Nẵng",
+									});
+									$("#wtwd").text("DANANG WEATHER");
+								}
+							});
+							</script>
+						</div>
+					</div>
+					
+					<div class="row">
+						
+					</div>
+					
+				</div>  
+				
+
+				<!-- ========NEWS======== -->
+
+
+				<!-- ---------CONTENT------------>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="table-responsive">
+								<table class="table align-middle">
+									<thead>
+										<tr style="background-color: green;">
+											<td><a href="ShopNS.html" style="color: honeydew;text-decoration: none;">&#10095;&#10095; Nông Sản</a></td>
+										  <td></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<a href="ShopNS.html">
+													<div class="a-s-f" style="width: 10rem;">
+														<img src="https://img.nhandan.com.vn/Files/Images/2021/05/14/hn2-1620988405579.jpg" class="card-img-top" alt="...">
+													</div>
+												</a>
+											</td>
+											<td class="align-top">
+												<div class="content">
+													<h6><a href="ShopNS.html">Vú Sữa Vĩnh Kim</a></h6>
+													<p>
+													Vùng đất Vĩnh Kim nổi tiếng với rất nhiều trái ngon quả ngọt như sầu riêng, măng cụt, ổi, xoài, nhãn... Tuy nhiên, nổi tiếng nhất không thể không kể đến loại quả được mệnh danh là “nữ hoàng” của xứ sở trái cây Vĩnh Kim, tạo nên “thương hiệu riêng” gắn liền với vùng đất Vĩnh Kim, đó chính là Vú Sữa lò rèn...</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="ShopNS.html">
+													<div class="a-s-f" style="width: 10rem;">
+														<img src="https://fruitstt.vn/wp-content/uploads/2019/04/Chom-chom-thai-sach-xuat-khau-fruits-tt-2.jpg" class="card-img-top" alt="...">
+													</div>
+												</a>
+											</td>
+											<td class="align-top">
+												<div class="content">
+													<h6><a href="ShopNS.html">Chôm Chôm Thái(Rong-Riêng)</a></h6>
+													<p>
+													  Cây chôm chôm rong-riêng này có sức sống rất mạnh, sau khi thu hoạch cây rất nhanh cho ra đọt non, lại ít tốn chi phí vào phân bón hay thuốc bảo vệ thực vật; đồng thời cây dễ ra hoa và đậu quả, mau cho thu hoạch...                                               </p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="ShopNS.html">
+													<div class="a-s-f" style="width: 10rem;">
+														<img src="https://product.hstatic.net/200000157781/product/thanh_long_binh_thuan__1__95ec133cf05a45ba899442c4ff3f8a83.jpg" class="card-img-top" alt="...">
+													</div>
+												</a>
+											</td>
+											<td class="align-top">
+												<div class="content">
+													<h6><a href="ShopNS.html">Thanh long Bình Thuận tăng giá trở lại</a></h6>
+													<p>
+													  Sau một thời gian dài giữ giá thấp trong khoảng từ 9.000 - 10.000 đồng/kg, vào đầu tuần này, giá thanh long tại Bình Thuận đã tăng khá cao. Thanh long loại 1 xuất khẩu được thương lái mua tại vườn với giá 15.000 đồng/kg; loại 2 giá 14.000 đồng/kg...
+													</p>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="table-responsive">
+								<table class="table align-middle">
+									<thead>
+										<tr style="background-color: green;">
+											<td ><a href="ShopTS.html" style="color: honeydew;text-decoration: none;">&#10095;&#10095; Thủy Sản</a></td>
+										  <td></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<a href="ShopTS.html">
+													<div class="a-s-f" style="width: 10rem;">
+														<img src="https://tepbac.com/upload/news/ge_image/2021/05/ngu-dan_1621505012.jpg" class="card-img-top" alt="...">
+													</div>
+												</a>
+											</td>
+											<td class="align-top">
+												<div class="content">
+													<h6><a href="ShopTS.html">Cá tra chờ qua cơn bĩ cực</a></h6>
+													<p>
+													  Cá tra đang vào mùa thấp điểm, giá giảm dưới đáy. Người nuôi cá thịt hay cá giống đều than lỗ, tìm cách trụ lại, vượt khó.Dù ẩn nhẫn chờ mùa dịch bệnh Covi-19 trải qua hai tuần cao điểm giãn cách xã hội, nhưng người nuôi cá tra ở ĐBSCL cho biết tình hình thị trường tiêu thụ cá nguyên liệu vẫn chưa thể sớm phục hồi...
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="ShopTS.html">
+													<div class="a-s-f" style="width: 10rem;">
+														<img src="https://img.icn.vn/Image.ashx?src=/uploads/logistics/11-chot-qdal-1446161131185-crop-1446161142459-1446188477458.jpg&width=384" class="card-img-top" alt="...">
+													</div>
+												</a>
+											</td>
+											<td class="align-top">
+												<div class="content">
+													<h6><a href="ShopTS.html">Xuất Khẩu Thủy Sản: Vì Sao 32.000 Tấn Tôm, Cá Việt Bị Trả Về?</a></h6>
+													<p>
+													  Việt Nam là nước có nhiều lô hàng xuất khẩu thủy sản bị cảnh báo nhiễm kháng sinh, chứa mầm bệnh và buộc trả về nước tại hầu hết thị trường. Tính từ năm 2014 đến nay đã có gần 32.000 tấn hàng bị trả về. Riêng chín tháng đầu năm nay, Việt Nam có đến 582 lô hàng bị 38 nước trả hàng về, trung bình mỗi công ty có năm lô hàng bị trả về...
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="ShopTS.html">
+													<div class="a-s-f" style="width: 10rem;">
+														<img src="https://thumb.ex-cdn.com/EXP/media.nongnghiep.vn/resize/450x270/files/bao_in/2020/05/21/225955-145109.jpeg" class="card-img-top" alt="...">
+													</div>
+												</a>
+											</td>
+											<td class="align-top">
+												<div class="content">
+													<h6><a href="ShopTS.html">Thủy sản khai thác sẵn sàng xuất chính ngạch Trung Quốc</a></h6>
+													<p>
+													  Hiện nay, nhiều mặt hàng thủy hải sản khai thác của tỉnh Nam Định như cá thu đao, mực… đã được lên kế hoạch xuất khẩu chính ngạch đi Trung Quốc.</p>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="table-responsive">
+								<table class="table align-middle">
+									<thead>
+										<tr style="background-color: green;">
+											<td><a href="ShopLS.html" style="color: honeydew;text-decoration: none;">&#10095;&#10095; Lâm Sản</a></td>
+											<td></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<a href="ShopLS.html">
+													<div class="a-s-f" style="width: 10rem;">
+														<img src="https://thumb.ex-cdn.com/EXP/media.nongnghiep.vn/resize/450x270/files/news_old/2019/12/03/xuong-san-xuat-cua-cty-go-duc-thanh-anh-cty-go-duc-thanh-2-1jpg-143348.jpg" class="card-img-top" alt="...">
+													</div>
+												</a>
+											</td>
+											<td class="align-top">
+												<div class="content">
+													<h6><a href="ShopLS.html"> Xuất khẩu lâm sản tháng 11 tăng 20% so với cùng kỳ</a></h6>
+													<p>
+													  Với giá trị xuất khẩu đạt được trong tháng 11 này, tổng giá trị xuất khẩu lâm sản lũy kế 11 tháng năm 2019 ước đạt 10,24 tỷ USD, tăng 20,5% so với cùng kỳ 2018, cách mục tiêu đề ra của cả năm 2019 là 0,76 tỷ USD khi vẫn còn thời gian 1 tháng.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="ShopLS.html">
+													<div class="a-s-f" style="width: 10rem;">
+														<img src="https://media.ex-cdn.com/EXP/media.nongnghiep.vn/files/ngant/2020/03/13/20200313_104722-104953_520.jpg" class="card-img-top" alt="...">
+													</div>
+												</a>
+											</td>
+											<td class="align-top">
+												<div class="content">
+													<h6><a href="ShopLS.html">Thả cu li quý hiếm về rừng</a></h6>
+													<p>
+													  Trước đó, cuối tháng 2/2020, trong quá trình đi tuần tra bảo vệ rừng, Hạt Kiểm lâm huyện Hương Sơn (Hà Tĩnh) phát hiện cá thể cu li nhỏ (trọng lượng khoảng 0,3 kg) đang bị buộc vào thanh gỗ bên đường, tình trạng sức khoẻ yếu do bị trói nhiều giờ.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="ShopLS.html">
+													<div class="a-s-f" style="width: 10rem;">
+														<img src="https://media.ex-cdn.com/EXP/media.nongnghiep.vn/files/news_old/2019/12/11/16-06-26_img_4344-083636.jpg" class="card-img-top" alt="...">
+													</div>
+												</a>
+											</td>
+											<td class="align-top">
+												<div class="content">
+													<h6><a href="ShopLS.html">Trồng rừng gỗ lớn, làm ăn lớn</a></h6>
+													<p>
+													  Phát triển rừng keo gỗ lớn, tiến tới cấp chứng chỉ Quản lý rừng bền vững (FSC) nhằm tăng thu nhập cho người dân, bảo vệ môi trường sinh thái và tăng hấp thụ các bon là hướng đi mới của ngành lâm nghiệp.</p>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>  
+						<div class="col-md-4">
+							<div class="right">
+								<div class="right-offer">
+									<a href="ShopNS.html"><h4>&#8801; Sản Phẩm Nổi Bật</h4></a>
+										<ul>
+											<li><a href="">CÁ TRA</a></li>
+											<li><a href="">CHÔM CHÔM THÁI(RONG-RIÊNG)-BẾN TRE</a></li>
+											<li><a href="">VẢI THIỀU LỤC NGẠN-BẮC GIANG</a></li>
+											<li><a href="">XOÀI TƯỢNG DẠI AN-BÌNH ĐỊNH</a></li>
+											<li><a href="">BƯỞI NĂM ROI-VĨNH LONG</a></li>
+										</ul>
+								</div> 
+								<div class="right-content">
+									<a href="KhuyenNongTT.html"><h4>Khuyến Nông</h4></a>
+										<div class="right-content1">
+											<a href="">Quy trình quản lý tổng hợp (IPM) sâu đục thân mía</a>
+										</div>
+										<div class="right-content1">
+											<a href="">Quy trình sử dụng phân bón hữu cơ phối hợp vô cơ</a>
+										</div>
+										<div class="right-content1">
+											<a href="">Biện pháp quản lý tổng hợp sâu bệnh gây hại chanh leo</a>
+										</div>
+										<div class="right-content1">
+											<a href="">Kỹ thuật ủ phân hữu cơ bằng chế phẩm vi sinh vật</a>
+										</div>
+										<div class="right-content1" style="border-bottom: none;">
+											<a href="">Quản lý tổng hợp bệnh héo vàng lá chuối</a>
+										</div>
+								</div>
+								<div class="right-content">
+									<a href="KhuyenNongCN.html"><h4>Chăn Nuôi</h4></a>
+										<div class="right-content1">
+											<a href="">Phòng chống đói, rét cho đàn vật nuôi trong mùa đông</a>
+										</div>
+										<div class="right-content1">
+											<a href="">Giới thiệu một số giống gà bản địa, đặc sản ở miền Bắc</a>
+										</div>
+										<div class="right-content1">
+											<a href="">Kỹ thuật làm đệm lót sinh học cho bò nuôi thịt</a>
+										</div>
+										<div class="right-content1">
+											<a href="">Hướng dẫn phòng bệnh cúm cho gia cầm</a>
+										</div>
+										<div class="right-content1" style="border-bottom: none;">
+											<a href="">Phòng chống dịch bệnh cho vật nuôi mùa mưa bão</a>
+										</div>
+								</div>
+								<div class="right-content">
+									<a href="KhuyenNongKHCN.html"><h4>Khoa Học - Công Nghệ</h4></a>
+										<div class="right-content1">
+											<a href="">Giải pháp sinh thái để bảo vệ cây trồng</a>
+										</div>
+										<div class="right-content1">
+											<a href="">Lắp đặt khai thác thủy sản điện tử MECOM NKT-01</a>
+										</div>
+										<div class="right-content1">
+											<a href="">Ứng dụng khoa học và công nghệ trong nông nghiệp</a>
+										</div>
+										<div class="right-content1">
+											<a href="">Hướng dẫn kỹ thuật trồng cây giổi bằng cây ghép</a>
+										</div>
+										<div class="right-content1" style="border-bottom: none;">
+											<a href="">Sử dụng công cụ kỹ thuật số cho trang trại hữu cơ</a>
+										</div>
+								</div>
+								<div class="fcalendar">
+									
+									<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+									
+									<div id="calendar">
+										<div id="calendar_header">
+											<i class="icon-chevron-left"></i>
+											<h1></h1>
+											<i class="icon-chevron-right"></i>
+										</div>
+										<div id="calendar_weekdays"></div>
+										<div id="calendar_content"></div>
+									</div>
+		
+									<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+									<script src="TrangChu/calendar.js"></script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>            
+				
+
+
+
+				<!-- =============CONTENT=========== -->
+
+
+				<!-- --------------CARD--------------->
+
+
+				<div class="container">
+				  <div class="content">
+					<h3>&#10095;&#10095;  <a href="ShopNS.html">Sản Phẩm Cần Hỗ Trợ</a> &#10095;&#10095;
+					  <a href="ShopNS.html">Nông Sản</a>
+				  </h3><br>
+				  </div>
+					<div class="row">
+					  <div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+						  <img src="https://abmfoods.com.vn/wp-content/uploads/2020/08/6.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <a href="CuaHang/infosp/sanpham.html" style="text-decoration: none;color: rgb(19, 15, 15);"><h5 class="card-title">Bưởi năm roi</h5></a>
+								<p class="card-text">Bưởi Năm Roi ít hạt hoặc không có hạt, múi bưởi đều, dễ tách, các con tép vàng đều, mọng nước nhưng ráo, mùi thơm đậm đà, đặc trưng mang nhiều chất dinh dưỡng thiết yếu cho cơ thể người.
+								</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+						  <img src="https://abmfoods.com.vn/wp-content/uploads/2020/08/5.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <a href="ShopNS.html" style="text-decoration: none;color: rgb(19, 15, 15);"><h5 class="card-title">Xoài tượng Đại An</h5></a>
+							  <p class="card-text">Có thân hình thuôn dài,khi nhai cảm giác cực giòn, vị chua thoang thoảng, nó không chua như xoài keo.</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+						  <img src="https://vaithieu.net/wp-content/uploads/2018/01/vai-thieu-tuoi-1.png" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <a href="ShopNS.html" style="text-decoration: none;color: rgb(19, 15, 15);"><h5 class="card-title">Vải thiều lục ngạn</h5></a>
+							  <p class="card-text">Quả vải khi chín có màu đỏ tươi, hạt nhỏ, cùi dày và mọng nước, lại rất giàu chất dinh dưỡng.</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+						  <img src="http://caygiongtuanchu.com/wp-content/uploads/2016/09/1537540_sieu-huu-ich-tu-qua-nhan-1.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <a href="ShopNS.html" style="text-decoration: none;color: rgb(19, 15, 15);"><h5 class="card-title">Nhãn lồng Hưng Yên</h5></a>
+							  <p class="card-text">Nhãn lồng Hưng Yên có vỏ màu vàng sậm tự nhiên, cho vị ngọt, thơm, quả to, cùi dày, năng suất cao, cùi giòn, hạt nhỏ đen nháy, mùi thơm tự nhiên, đáy có hai dẻ cùi lồng xếp khít vào nhau.</p>
+							</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+
+
+
+				  <div class="container">
+					<div class="content">
+					  <h3>&#10095;&#10095;  <a href="ShopTS.html">Sản Phẩm Cần Hỗ Trợ</a> &#10095;&#10095;
+						<a href="ShopTS.html">Thủy Sản</a>
+					</div><br>
+					<div class="row">
+					  <div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+						  <img src="http://bizweb.dktcdn.net/100/021/951/files/ca-ba-sa-00abe256-1903-41c1-bf61-0ea2b9679aef.jpg?v=1462353426571" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <a href="ShopTS.html" style="text-decoration: none;color: rgb(19, 15, 15);"><h5 class="card-title">Cá BaSa</h5></a>
+								<p class="card-text">Cá basa cung cấp cho bạn protein chất lượng cao và không nhiều calo.Ăn cá cũng có liên quan đến một số lợi ích sức khỏe, bao gồm tuổi thọ và nguy cơ mắc bệnh tim thấp hơn.</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+						  <img src="https://haisantrungnam.vn/wp-content/uploads/2020/03/cua-ca-mau-4-600x439.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <a href="ShopTS.html" style="text-decoration: none;color: rgb(19, 15, 15);"><h5 class="card-title">Cua Cà Mau</h5></a>
+							  <p class="card-text">Cua biển Cà Mau có hương vị thơm ngon, thịt chắc, béo ngậy vừa phải mà còn có giá trị dinh dưỡng rất cao.Chứa hàm lượng vitamin A, B, B1, B2, PP, Protein, kali, magie, sắt, calcium,… cao.</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+						  <img src="https://cdn.vietnambiz.vn/stores/news_dataimages/quynhtd/082018/31/17/4905_baYch_tuoYYc.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <a href="ShopTS.html" style="text-decoration: none;color: rgb(19, 15, 15);"><h5 class="card-title">Bạch tuộc</h5></a>
+							  <p class="card-text">Thịt bạch tuộc tươi có giá trị dinh dưỡng cao, cung cấp nhiều vitamin thiết yếu như A, B1, B2, C và một số loại khoáng chất như phốt pho, canxi, sắt, đồng, kẽm, iốt, thịt bạch tuộc chứa ít chất béo. </p>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+						  <img src="https://danviet.mediacdn.vn/2019/11/29/1a3ec09ce322203fbe0501b795495764-15750313832691833378427.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+							  <a href="ShopTS.html" style="text-decoration: none;color: rgb(19, 15, 15);"><h5 class="card-title">Cá ngừ</h5></a>
+							  <p class="card-text">Cá ngừ giàu chất béo có lợi, DHA tốt cho sức khỏe trí não, đôi mắt, phù hợp trong thực đơn ăn uống của người ăn kiêng, giữ dáng.</p>
+							</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+		  
+
+
+
+
+				  <div class="container">
+					<div class="content">
+					  <h3>&#10095;&#10095;  <a href="">Bài viết phổ biến</a></h3><br>
+					</div>
+					<div class="row" style="margin-bottom: 20px;">
+					  <div class="col-md-2">
+						<div class="baivietphobien">
+						  <a href="">
+							<img src="https://thumb.ex-cdn.com/EXP/media.nongnghiep.vn/resize/420x252/files/bao_in/2021/05/23/16_00_2227_10000774chi-ai-vot-ca-100007-160249.jpeg" class="card-img-top" alt="..." style="height: 150px;">
+						   </a> 
+							<div class="card-body">
+							  <h5 class="title-tieude"><a href="">Triển vọng nuôi cá chình trên sông Trà Khúc</a></h5>
+							</div>
+						</div>
+					  </div>
+					  <div class="col-md-2">
+						<div class="baivietphobien">
+						  <a href="">
+							<img src="https://thumb.ex-cdn.com/EXP/media.nongnghiep.vn/resize/420x252/files/bao_in/2021/05/19/0102-watermark_dau-tu-nuoi-bien-4-1734_20210513_412-151015.jpeg" class="card-img-top" alt="..." style="height: 150px;">
+						   </a> 
+							<div class="card-body">
+							  <h5 class="title-tieude"><a href="">Đón 'đại bàng' vào nuôi biển, nuôi tôm</a></h5>
+							</div>
+						</div>
+					  </div><div class="col-md-2">
+						<div class="baivietphobien">
+						  <a href="">
+							<img src="https://thumb.ex-cdn.com/EXP/media.nongnghiep.vn/resize/330x198/files/thangla/2021/05/20/4922-09_48_2946_20200622_180118.jpg" class="card-img-top" alt="..." style="height: 150px;">
+						   </a> 
+							<div class="card-body">
+							  <h5 class="title-tieude"><a href="">Cấp giấy chứng nhận quyền sử dụng đất cho các hộ nuôi tôm</a></h5>
+							</div>
+						</div>
+					  </div><div class="col-md-2">
+						<div class="baivietphobien" >
+						  <a href="">
+							<img src="https://thumb.ex-cdn.com/EXP/media.nongnghiep.vn/resize/450x270/files/bao_in/2021/05/12/14_25_4717_101009700772-101009-144151.jpeg" class="card-img-top" alt="..." style="height: 150px;">
+						   </a> 
+							<div class="card-body">
+							  <h5 class="title-tieude"><a href="">Nuôi tôm xen lúa, cho tôm sạch, lúa sạch</a></h5>
+							</div>
+						</div>
+					  </div><div class="col-md-2">
+						<div class="baivietphobien" >
+						  <a href="">
+							<img src="https://thumb.ex-cdn.com/EXP/media.nongnghiep.vn/resize/520x392/files/news/2021/04/01/16_48_2271_anh-5jpg.jpg" class="card-img-top" alt="..." style="height: 150px;">
+						   </a> 
+							<div class="card-body">
+							  <h5 class="title-tieude"><a href="">Độc đáo trồng tiêu sạch núi Cấm, làm không đủ bán</a></h5>
+							</div>
+						</div>
+					  </div><div class="col-md-2">
+						<div class="baivietphobien">
+						  <a href="">
+							<img src="https://thumb.ex-cdn.com/EXP/media.nongnghiep.vn/resize/520x392/files/huannn/2021/02/17/2202-img_4217-164604_616.jpg" class="card-img-top" alt="..." style="height: 150px;">
+						   </a> 
+							<div class="card-body">
+							  <h5 class="title-tieude"><a href="">Đánh thức tiềm năng hạt dẻ Trùng Khánh</a></h5>
+							</div>
+						</div>
+					  </div>
+					  </div>
+				  </div>
+
+				<!-- ====================CARD=============== -->
+
+
+
+				<!-- ----------------PAGINATION-------------- -->
+
+				<div class="container">
+				  <div class="row">
+					<nav style="margin:0 auto">
+					  <ul class="pagination">
+						<li class="page-item">
+						  <a class="page-link" href="#">Quay lại</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item active" aria-current="page">
+						  <a class="page-link" href="#">2</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+						  <a class="page-link" href="#">Tiếp theo</a>
+						</li>
+					  </ul>
+					</nav>
+				  </div>
+				</div>
+
+				<!-- =====================PAGINATION============== -->
+
+
+				<!-- /BODY -->
+			</div>
+			
+			<div id="about" class="footer" style="background-color:black;color:white;">
+				<footer class="footer-distributed">
+				
+					<div class="footer-left">
+						<h3>
+						<img class="logoft" src="image/logo.png">
+						FARMER'S<span> FRIEND</span></h3>
+						<p class="footer-links">
+							<a href="index.html">Trang chủ</a> | <a href="#myTopnav">Cửa hàng</a> | 
+							<a href="#myTopnav">Khuyến nông </a> | <a href="#about">Hỗ Trợ </a>
+						</p>
+						<br>
+						<a class="signUpNow2" href="DangKi/DangKi.html"><b>THAM GIA NGAY</b></a>
+						
+					</div>
+ 
+					<div class="footer-center">
+ 
+						<div><button title="Địa chỉ" onclick="copyToClipboard('message')">
+							<i class="fa fa-map-marker"></i></button>
+							<p><span>03 Ngu Hanh Son Street</span> Danang, Vietnam</p>
+							<p style="display: none;" id="message">03 Ngu Hanh Son Street, Danang, Vietnam</p></div>
+						<div><button title="Số điện thoại" onclick="copyToClipboard('message1')">
+							<i class="fa fa-phone"></i></button>
+							<p id="message1">+84 123 4567 890</p></div>
+						<div><button title="Email" onclick="copyToClipboard('message2')">
+							<i class="fa fa-envelope"></i></button>
+							<p><a id="message2">fsfteam@vku.udn.vn</a></p></div>
+ 
+					</div>
+ 
+					<div class="footer-right">
+ 
+						<p class="footer-company-about">
+							<span>FsF Team company</span>
+							Web Farmer's Friend is a forum for Farmers, Businessmens &amp; Government Agency for Agriculture.
+						</p>
+ 
+						<div class="footer-icons">
+							<a class="fb" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+							<a class="gg" title="Google" href="#"><i class="fa fa-google"></i></a>
+							<a class="inst" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+							<a class="twt" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+ 
+					</div>
+					<hr style="margin-top:40px;">
+					<p class="footer-company-name">Copyright &copy; 2021 FsF Team . All rights reserved.</p>
+				</footer>
+			</div>
+			
+		</div>
+		
+		<script>
+			window.onscroll = function() {stickyMenu()};
+
+			var navbar = document.getElementById("myTopnav");
+			var sticky = navbar.offsetTop;
+
+			function stickyMenu() {
+				if (window.pageYOffset > sticky) {
+					navbar.classList.add("sticky");
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+			
+			// Get the modal
+			var modal = document.getElementById('signIn');
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == signIn) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+		
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script> -->
+		
+	</body>
+</html>
